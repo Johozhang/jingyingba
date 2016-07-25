@@ -1,0 +1,222 @@
+#bg{
+	background-image: url(../../img/index/loginbg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	min-width: 1250px;
+	height: 600px;
+	margin: 0 auto;
+}
+a {
+	color: #808080;
+}
+
+.navigation {
+	float: right;
+	margin-right: 130px;
+}
+
+/*login*/
+
+#loginbox {
+	width: 1250px;
+	position: relative;
+	margin: 0 auto;
+	
+}
+
+#login {
+	position: absolute;
+	width: 324px;
+	height: 450px;
+	right: 150px;
+	top: 0;
+	margin-top: 78px;
+	box-sizing: content-box;
+	background-color: rgba(255,255,255,0.9);
+}
+
+
+.loginhead {
+	background-color: #fff;
+	width: 100%;
+	border-bottom:2px solid #E8E8E8;
+	}
+
+	
+.logincho {
+	border-bottom: 2px solid #29B572;
+	color: #29B572;
+	/*font-size:1.5rem;*/
+}
+
+#denglu,#zhuce {
+	font-size: 1.4rem;
+	display: block;
+	float: left;
+	width:50%;
+	text-align: center;
+	padding: 18px 0px;
+
+}
+
+
+#denglu:hover,#zhuce:hover {
+	border-bottom: 2px solid #29B572;
+	color: #29B572;
+	/*font-size:1.5rem;*/
+}
+
+.loginmain {
+	margin: 20px;
+/*	*/
+}
+#loginmain {
+	
+}
+
+#register {
+	display: none;
+}
+
+#phonetips {
+	color: red;
+	margin: 15px 0 ;
+	font-weight: bold;
+	display: none;
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #b4b4b4;
+}
+
+#loginList li,#regList li{
+	width: 260px;
+	height: 20px;
+	border: 1px solid #B4B4B4;
+	padding: 9px;
+	margin-bottom:22px ;
+	background-color: rgba(255,255,255,1);
+}
+
+#loginphone,#password,#code,#regphone {
+	border: none;
+}
+
+#codeimg,#getyanzhengma {
+	width: 80px;
+	height: 40px;
+	float: right;
+	margin-right: 5px;
+	background-color: #fff;
+	color: #008000;
+	text-align: center;
+	font-size: 1.4rem;
+
+}
+#getyanzhengma {
+	height: 20px;
+	border: 1px solid #008800;
+	padding: 10px 0px;
+	border-radius: 3px;
+}
+
+#rem {
+	color: #B4B4B4;
+	font-size: 1.3rem;
+}
+
+#rem input {
+	-webkit-appearance: checkbox;
+}
+
+#sub {
+	margin-top: 12px;
+	width: 100%;
+}
+
+#loginsub {
+	display: none;
+}
+#loginBtn {
+	display: block;
+	color: #FFF;
+	background-color: #29b572;
+	width: 100%;
+	font-size: 1.8rem;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+#partner {
+	text-align: center;
+	position: relative;
+	font-size: 1.4rem;
+	color: #B4B4B4;
+	margin-top: 20px;
+}
+
+#partner:before,#partner:after{
+	display: block;
+	content: "";
+	border: 1px solid #B4B4B4;
+	width: 80px;
+	position: absolute;
+}
+
+#partner:before {
+	left: 0;
+	top: 10px;
+}
+
+#partner:after {
+	right: 0;
+	top: 10px;
+}
+
+#partnerList {
+	text-align: center;
+}
+#partnerList a{
+	display: inline-block;
+	margin: 10px 15px;
+}
+
+#partnerList img {
+	width: 32px;
+}
+
+#regPassword {
+	margin-top: 80px;
+}
+
+#agree {
+	color: #008800;
+}
+
+
+/*footer*/
+
+#footerbox {
+	width: 1250px;
+	margin: 0 auto;
+	text-align: center;
+}
+#loginfooter {
+	margin: 0 auto;
+}
+
+#footerbox p {
+	color: #808080;
+	padding: 5px 0px;
+}
+
+#loginfooter span{
+	border: 1px solid #808080;
+	margin: 0 5px;
+}
