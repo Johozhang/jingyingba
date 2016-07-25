@@ -1,0 +1,22 @@
+#wrap {
+	width: 1250px;
+	margin: 0 auto;
+}
+
+.loginreg {
+	margin: 38px 0px;
+}
+
+.loginreg a{
+	color: #000;
+	font-size: 1.4rem;
+	padding: 0 10px;
+}
+
+.loginreg a:hover{
+	color: #008800;
+} 
+
+#banner {
+	
+}
