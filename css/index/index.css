@@ -1,3 +1,91 @@
+.limit {
+	overflow: inherit;
+}
+.city {
+	float: left;
+	font-size: 1.5rem;
+	width: 72px;
+	height: 26px;
+	cursor: pointer;
+	margin: 32px 0px 0px 15px;
+	border-radius: 2px;
+	border: 1px solid #e0e0e0;
+	position: relative;
+	/*z-index: 1000;*/
+}
+
+.city p {
+	width: 62px;
+	height: 26px;
+	color: #333;
+	line-height: 26px;
+	padding-left: 10px;
+}
+
+.city i {
+	top:26px;
+	left: 0px;
+	width: 72px;
+	height: 1px;
+	/*display: none;*/
+	z-index: 99999;
+	background: #fff;
+	position: absolute;
+}
+
+.city-cont {
+	top: 26px;
+	left: -2px;
+	width: 324px;
+	z-index: 11111;
+	background: #fff;
+	position: absolute;
+	border-radius: 2px;
+	border: 1px solid #e0e0e0;
+	padding: 25px 5px 0px 5px;
+}
+
+.city-cont li {
+	float: left;
+	margin: 0 15px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+
+.city-cont li:hover .citymask{
+	display: block;
+}
+
+.citymask {
+	width: 78px;
+	height: 30px;
+	position: absolute;
+	background: rgba(255,255,255,0.6);
+	display: none;
+}
+
+
+.city-cont li img {
+	width: 78px;
+	height: 30px;
+	display: block;
+	margin-bottom: 8px;
+	border-radius: 20px;
+}
+
+.city-cont li em{
+	color: #333;
+	font-size: 12px;
+	text-align: center;
+}
+
+header {
+	height: 100px;
+	/*z-index: 99999;*/
+}
+
 #wrap {
 	width: 1250px;
 	margin: 0 auto;
@@ -7,16 +95,473 @@
 	margin: 38px 0px;
 }
 
-.loginreg a{
+.loginreg a {
 	color: #000;
 	font-size: 1.4rem;
 	padding: 0 10px;
 }
 
-.loginreg a:hover{
+.loginreg a:hover {
 	color: #008800;
-} 
+}
+
+
+/*nav*/
+
+#nav {
+	margin: 20px auto;
+	width: 100%;
+	height: 100%;
+}
 
 #banner {
+	float: left;
+	width: 980px;
+	height: 350px;
+	overflow: hidden;
+}
+
+.swiper-pagination-switch {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #999;
+	box-shadow: 0px 1px 2px #555 inset;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.pagination {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	right: 20px;
+	text-align: right;
+	-webkit-user-select: none;
+}
+
+.swiper-pagination-switch {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 10px;
+	background: #fff;
+	opacity: 0.6;
+	box-shadow: 0px 1px 2px #555 inset;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.swiper-active-switch {
+	background: #fff;
+	opacity: 1;
+}
+
+
+/*nav right*/
+
+#navright {
+	float: right;
+	background-color: #fff;
+	width: 270px;
+	height: 350px;
+}
+
+.center {
+	width: 230px;
+	height: 310px;
+	margin: 10px 20px;
+}
+
+.centerhead {
+	border-bottom: 1px solid #e8e8e8;
+	height: 90px;
+}
+
+.centerhead img {
+	width: 60px;
+	float: left;
+}
+
+.centerms {
+	width: 150px;
+	float: right;
+	font-size: 1.4rem;
+	text-align: left;
+}
+
+.centerbtn:hover {
+	color: #FFFFFF;
+	background-color: #29B572;
+}
+
+.centerbtn {
+	display: inline-block;
+	color: #29b572;
+	width: 60px;
+	height: 24px;
+	margin: 5px;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 24px;
+}
+
+.centerlogin {
+	background-color: #008800;
+	color: #fff;
+}
+
+#centercon {
+	margin-top: 14px;
+	font-size: 1.4rem;
+	height: 200px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#knowjing {
+	float: right;
+	color: #000;
+}
+
+#knowjing:hover {
+	color: #29B572;
+}
+
+#knowfour {
+	margin: 12px auto;
+}
+
+#knowfour li {
+	float: left;
+	width: 50%;
+	text-align: center;
+	color: #000;
+}
+
+#knowfour li a {
+	color: #000;
+}
+
+#knowfour li a:hover {
+	color: #29B572;
+}
+
+.rumen {
+	width: 40px;
+	height: 36px;
+	margin: 12px auto;
+	background-image: url(../../img/index/rumen.png);
+	background-repeat: no-repeat;
+	background-size: 220px 36px;
+}
+
+.rumen1 {
+	background-position-x: 0px;
+}
+
+.rumen2 {
+	background-position-x: -55px;
+}
+
+.rumen3 {
+	background-position-x: -115px;
+}
+
+.rumen4 {
+	background-position-x: -170px;
+	width: 60px;
+}
+
+#centerfooter {
+	text-align: center;
+}
+
+#centerfooter a {
+	color: #666;
+	text-decoration: underline;
+	margin: 20px;
+}
+
+#centerfooter a:hover {
+	color: #29B572;
+}
+
+
+/*------------------华丽分割线，下面是kecheng--------------*/
+
+#kecheng {
+	background-color: #fff;
+	width: 1250px;
+	margin: 20px auto;
+}
+
+#kecheng li:first-child {
+	border-left: none;
+}
+
+#kecheng li {
+	display: inline-block;
+	width: 220px;
+	padding: 10px 0px 10px 20px;
+	margin: 30px 0;
+	float: left;
+	border-left: 1px solid #e8e8e8;
+}
+
+.kechengtu {
+	width: 70px;
+	height: 60px;
+	background-image: url(../../img/index/kecheng.png);
+	background-repeat: no-repeat;
+	background-size: 340px 60px;
+	float: left;
+	margin: 30px 0;
+}
+
+.kechengtu1 {
+	background-position-x: 2px;
+}
+
+.kechengtu2 {
+	background-position-x: -65px;
+}
+
+.kechengtu3 {
+	background-position-x: -135px;
+}
+
+.kechengtu4 {
+	background-position-x: -205px;
+}
+
+.kechengtu5 {
+	background-position-x: -275px;
+}
+
+.kechengxiang {
+	display: inline-block;
+	float: left;
+	width: 130px;
+	margin-left: 10px;
+}
+
+.kechengxiang h3 {
+	font-size: 1.8rem;
+	font-weight: 900;
+}
+
+.kechengxiang p {
+	color: #999;
+	font-size: 1.4rem;
+}
+
+
+/*------------------华丽分割线，下面是contain--------------*/
+
+
+/*online*/
+
+#contain h2 {
+	font-size: 2.4rem;
+	margin: 20px 0;
+}
+
+#online {
+	width: 1250px;
+	height: 180px;
+	background-color: #fff;
+}
+
+#subject {
+	margin: 20px;
+	float: left;
+}
+
+#subject li {
+	width: 225px;
+	float: left;
+	position: relative;
+	margin: 0 8px;
+}
+
+.subjectmask {
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 140px;
+	color: #fff;
+}
+
+#subject li:hover .subjectmask {
+	display: block;
+}
+
+
+/*different*/
+
+#studdiff {
+	width: 1250px;
+	height: 350px;
+	background-color: #FFFFFF;
+}
+
+#different {
+	margin: 20px;
+	float: left;
+}
+
+#different li {
+	float: left;
+	width: 250px;
+	text-align: center;
+	margin: 0 20px;
+}
+
+#different li p {
+	text-align: left;
+	font-size: 1.3rem;
+	color: #999;
+}
+
+.stud {
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	margin: 0px 22px 28px 55px;
+}
+
+#different li h3 {
+	font-size: 1.8rem;
+	font-weight: 900;
+}
+
+/*scholarship*/
+
+#scholarship {
+	background-color: #fff;
+}
+
+#personList {
+	float: left;
+	margin: 0px 20px 40px 15px;
+	text-align: center;
+}
+
+#personList li {
+	display: inline-block;
+	float: left;
+	margin: 0 20px;
+}
+
+.person {
+	width: 200px;
+	height: 350px;
+	border: 2px solid;
+	border-image: linear-gradient(transparent,#f2f2f2)30 30;	
+}
+.person *{
+	margin: 10px;
+}
+
+.personhead {
+	width: 120px;
+	height: 120px;
+	border-radius:60px;
+	margin: 40px;
+	}
 	
+.peresonmoney{
+		font-size: 2.4rem;
+	}
+	
+	/*agency*/
+	
+#agency {
+	height: 150px;
+	width: 1250px;
+	background-color: #fff;
+	text-align: center;
+	}
+	
+	#agencyxian {
+		width: 1190px;
+		float: left;
+		overflow: hidden;
+		margin: 50px auto;
+		position: relative;
+	}
+
+#agencyList{
+	width:3740px;
+	height: 50px;
+	position: relative;
+}
+
+#agencyList li,#partner li {
+	display: inline-block;
+	float: left;
+	width: 150px;
+	height: 50px;
+	margin: 0 10px;
+	border: 1px solid #e8e8e8;
+	overflow: hidden;
+}
+
+#partner li {
+	margin: 10px 20px;
+}
+
+/*partner*/
+
+#partner {
+	width: 1250px;
+	height: 150px;
+	background-color: #fff;
+	padding: 20px;
+}
+
+#friend {
+	width: 1290px;
+	background-color: #fff;
+}
+
+#friendList {
+	padding: 50px 40px;
+}
+
+#friendList li{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#friendList li a {
+	font-size: 1.4rem;
+	color: #333;
+}
+
+
+/*gotop*/
+
+#top {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	background-color: #008000;
+	bottom: 120px;
+	right: 140px;
+	cursor: pointer;
+}
+
+#top img {
+	transform: rotateZ(180deg);
+	width: 40px;
+	height: 25px;
+	margin: 15px auto;
 }
