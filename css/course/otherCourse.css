@@ -1,3 +1,4 @@
+
 .course-advertise{
 	width: 1194px;
 	margin:30px auto;
@@ -152,6 +153,7 @@ tr,td,table{
 	background-color: white;
 	border:1px solid #ea9b65;
 	color: #ea9b65;
+	vertical-align: top;
 }
 .course-list{
 	width: 1225px;
@@ -178,7 +180,10 @@ tr,td,table{
 }
 
 
-
+.course-reorder{
+	display: inline-block;
+	width: 500px;
+}
 .course-reorder>li{
 	height: 58px;
 	line-height: 58px;
@@ -349,7 +354,7 @@ tr,td,table{
  	border-collapse:collapse;
  	margin-top: 15px;
  	margin-bottom: 69px;
- 	display: none;
+ 
  }
  .course-details tr{
  	display: block;
@@ -388,6 +393,7 @@ tr,td,table{
 /*课程详情*/
 /*课程评价*/
 .course-judge{
+ display: none;
 
 }
 .judge-count{
@@ -473,8 +479,110 @@ tr,td,table{
 	margin: 0 30px;
 	border-top:1px solid #e8e8e8; 
 	padding-top: 54px;
+	margin-bottom: 45px;
 }
+.impression div{
+	display: inline-block;
+	float: left;
+}
+.impression div:nth-of-type(1){
+	width: 64px;
+	vertical-align: top;
+	font-size: 14px;
+	color: #999;
+	line-height: 22px;
+}
+.impression div:nth-of-type(2){
+	width: 786px;
+}
+.impression div:nth-of-type(2) span{
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+	color: #3faf7a;
+	margin-left: 10px;
+	border:1px solid #3faf7a;
+	margin-bottom: 15px;
+	padding: 0 6px;
+	box-sizing: border-box;
+}
+.impression div:nth-of-type(2) .impression-active{
+	background-color: #c2c2c2;
+	color: white;
+	border:none;
+}
+.judge-details{
+	margin: 0 30px;
+	border:1px solid #e8e8e8; 
+	margin-bottom: 59px;
 
+}
+.judge-details>div:nth-of-type(1){
+	margin-bottom: 7px;
+	height: 40px;
+	border-bottom:1px solid #e8e8e8; 
+	font-size: 14px;
+	color: #333;
+	padding-left: 20px;
+	line-height: 40px;
+	background-color: #fafafa;
+}
+.judge-details li{
+	display: block;
+	margin:0 20px;
+	padding: 20px 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+.judge-details li span{
+	display: inline-block;
+	height: 33px;
+	line-height: 33px;
+	font-size: 12px;
+	width: 12px;
+	vertical-align: top;
+	color: #999;
+}
+#user-name{
+	width: 200px;
+}
+.user-judge{
+	background:url(../../img/course/star1.png) no-repeat;
+	background-size: 8px 8px;
+	background-position: center center;		
+}
+.user-judge-active{
+	background:url(../../img/course/star2.png) no-repeat;
+	background-size: 8px 8px;
+	background-position: center center;		
+}
+.judge-details p{
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+}
+.judge-details ul{
+	margin-bottom: 30px;
+}
+.judge-details .judge-nav{
+ text-align: center;
+}
+.judge-nav{
+	text-align: center;
+	margin-bottom: 38px;
+}
+.judge-nav span{
+	height: 30px;
+	line-height: 30px;
+	border:1px solid #cccccc;
+	display: inline-block;
+	padding: 0 11px;
+	font-size: 13px;
+	color: #666666;
+}
+.judge-nav .page-active{
+	background-color: #29b572;
+}
 
 
 
@@ -562,12 +670,31 @@ tr,td,table{
 }
 /*课程详情*/
 
+.ad-nav{
+	width: 100%;
+	position: fixed;
+	width: 100%;
+	height: 66px;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 2;
+	border-bottom: 1px solid #eeeeee;
+	display: none;
+}
+.ad-nav nav{
+	width: 1225px;
+	margin:0 auto;
+}
 
+.ad-nav .buy-soon,.ad-nav .pre-advice{
+	margin-top: 12px;
+	float: right;
 
-
-
-
-/*用户评价*/
+}
+.ad-nav .buy-soon{
+	margin-left: 8px;
+}
 
 
 
