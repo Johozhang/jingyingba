@@ -1,0 +1,189 @@
+.schedule {/*学习进度样式-开始*/
+	width: 1078px;
+	float: right;
+	line-height: 1;
+	margin-top: 26px;
+	
+}
+.schedule>p {
+	font-size: 1.4rem;
+	color: #999;
+	text-indent: 22px;
+}
+.scheduleList {
+	margin-top: 7px;
+}
+.scheduleList li {
+	height: 39px;
+	line-height: 39px;
+	font-size: 1.4rem;
+}
+.scheduleList .active {
+	background-color: #eef9f4;
+}
+.scheduleList li:nth-last-child(1) {
+	margin: 0;
+}
+.scheduleList li>span:nth-last-child(1) {
+	float: right;
+	margin-right: 72px;
+}
+.scheduleList li>span:nth-child(1) {
+	margin-left: 30px;
+	width: 540px;
+}
+.scheduleList span {
+	display: inline-block;
+	line-height: 14px;
+}
+.scheduleList p {
+	display: inline-block;
+}
+.scheduleList p span,.scheduleList li>span:nth-child(3) {
+	color: #666;
+	line-height: 39px;
+}
+.scheduleList li p>span:nth-child(1) {
+	width: 105px;
+}
+.grayBar,.greenBar {
+	display: inline-block;
+	height: 4px;
+}
+.grayBar {
+	position: relative;
+	width: 50px;
+	background-color: #ccc;
+	margin: 17.5px 0;
+	vertical-align: top;
+}
+.greenBar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #29b572;
+}
+.scheduleList li:nth-child(1) .greenBar {
+	width: 20px;
+}
+.scheduleList li:nth-child(2) .greenBar {
+	width: 10px;
+}
+.scheduleList li:nth-child(3) .greenBar {
+	width: 50px;
+}/*学习进度样式-结束*/
+/*内容头样式-结束*/
+
+/*中间内容样式-开始*/
+.centerContainer {
+	margin-top: 30px;
+	overflow: hidden;
+}
+.leftBar {/*左侧导航栏样式-开始*/
+	display: inline-block;
+	width: 171px;
+	background-color: white;
+	margin-right: 15px;
+}
+.leftList {
+	width: 169px;
+	margin: 1px auto;
+}
+.leftList li {
+	border-left: 2px solid transparent;
+	height: 48px;
+}
+.leftList .active {
+	border-color: #29b572;
+}
+.leftList a {
+	display: block;
+	line-height: 48px;
+	color: black;
+	font-size: 1.4rem;
+	text-indent: 16px;
+}/*左侧导航栏样式-结束*/
+.cdDown {
+	position: relative;
+	float: right;
+	width: 1064px;
+	background-color: white;
+	height: 571px;
+}
+.classMate {
+	width: 590px;
+	margin: 127px auto 0;
+	font-size: 1.4rem;
+	overflow: hidden;
+}
+.classMate>p {
+	font-size: 1.4rem;
+	line-height: 1;
+	margin-bottom: 18px;
+	text-indent: 109px;
+}
+.classMate span {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	line-height: 38px;
+}
+.classMate>div {
+	overflow: hidden;
+}
+.classMate>div>div {
+	width: 427px;
+	margin-bottom: 12px;
+	float: left;
+}
+.classMate>div>div:nth-child(2) {
+	float: right;
+	width: 153px;
+	text-align: left;
+	line-height: 38px;
+}
+.classMate>div:nth-child(3) .erroTips {
+	display: none;
+}
+.erroTips {
+	display: none;
+}
+.redDot {
+	color: red;
+}
+.greenDot {
+	color: green;
+	display: none;
+}
+.tips {
+	display: inline-block;
+	text-indent: 10px;
+	color: #999;
+	font-size: 1.2rem;
+}
+.classMate>a {
+	display: block;
+	width: 134px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #29b572;
+	color: white;
+	margin-left: 109px;
+	float: left;
+}
+.inputWrap {
+	width: 306px;
+	height: 36px;
+	border: 1px solid #e8e8e8;
+	float: right;
+	display: inline-block;
+	margin-left: 19px;
+}
+.inputWrap input {
+	border: 0;
+	width: 286px;
+	height: 14px;
+	line-height: 14px;
+	padding: 11px 10px;
+}

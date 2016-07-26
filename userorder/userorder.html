@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/><!--重置样式-->
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/><!--特殊字符样式-->
+		<link rel="stylesheet" type="text/css" href="../css/head_footer.css"/><!--页面样式-->
+		<style type="text/css">
+			.leftBar {/*左侧导航栏样式-开始*/
+				display: inline-block;
+				width: 171px;
+				background-color: white;
+				margin-right: 15px;
+			}
+			.leftList {
+				width: 169px;
+				margin: 1px auto;
+			}
+			.leftList li {
+				border-left: 2px solid transparent;
+				height: 48px;
+			}
+			.leftList .active {
+				border-color: #29b572;
+			}
+			.leftList a {
+				display: block;
+				line-height: 48px;
+				color: black;
+				font-size: 1.4rem;
+				text-indent: 16px;
+			}
+			.content {
+				margin: 30px 0;
+				overflow: hidden;
+			}
+			.container {
+				width: 1064px;
+				float: right;
+			}
+			.cTitle {
+				height: 42px;
+				font-size: 2.2rem;
+			}
+			.orderWrap {
+				overflow: hidden;
+				background-color: white;
+			}
+			.orderMenu {
+				width: 756px;
+				overflow: hidden;
+				float: left;
+			}
+			.orderMenu li {
+				position: relative;
+				float: left;
+				width: 124px;
+				height: 38px;
+				border-top: 4px solid transparent;
+			}
+			.orderMenu .active {
+				border-color: #29b572;
+			}
+			.orderMenu li a {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				font-size: 1.6rem;
+				color: black;
+				line-height: 1;
+			}
+			.deleteOrder {
+				display: block;
+				float: right;
+				font-size: 1.4rem;
+				line-height: 1;
+				margin: 15px 30px 0 0;
+				color: #999;
+				cursor: pointer;
+			}
+			.trash {
+				font-size: 2rem;
+			}
+			.deleteOrder:hover {
+				color: #29b572;
+			}
+			.head {
+				overflow: hidden;
+			}
+			.orderPage {
+				width: 977px;
+				margin: 43px auto 55px;
+				border: 1px solid #e8e8e8;
+			}
+			.opHead {
+				height: 40px;
+				border-bottom: 1px solid #e8e8e8;
+				overflow: hidden;
+			}
+			.selectAll {
+				display: inline-block;
+				width: 227px;
+				float: left;
+				line-height: 40px;
+				height: 40px;
+				-webkit-user-select: none;
+			}
+			.selectAll span:nth-child(2) {
+				display: inline-block;
+				line-height: 40px;
+				font-size: 1.4rem;
+				text-indent: 5px;
+			}
+			.crossOut {
+				position: relative;
+				top: -2px;
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				border: 1px solid #e8e8e8;
+				margin: 13px 0 13px 15px;
+				vertical-align: middle;
+				-webkit-user-select: none;
+			}
+			.selected {
+				position: absolute;
+				display: inline-block;
+				width: 13px;
+				height: 13px;
+				font-size: 1.4rem;
+				line-height: 1;
+				left: -1px;
+				top: 0;
+				color: #29b572;
+				display: none;
+			}
+			.opHead {
+				background-color: #fafafa;
+			}
+			.opHead>span {
+				display: block;
+				float: left;
+				line-height: 40px;
+				font-size: 1.4rem;
+			}
+			.opHead>span:nth-child(2) {
+				width: 251px;
+			}
+			.opHead>span:nth-child(3) {
+				width: 111px;
+			}
+			.opHead>span:nth-child(4) {
+				width: 98px;
+			}
+			.opHead>span:nth-child(5) {
+				width: 86px;
+			}
+			.opHead>span:nth-child(6) {
+				width: 123px;
+			}
+			.orderList {
+				width: 947px;
+				height: 66px;
+				margin: auto;
+				padding: 28px 0;
+				border-bottom: 1px solid #e8e8e8;
+				font-size: 1.4rem;
+			}
+			.orderList .crossOut {
+				margin: 26px 0;
+				float: left;
+			}
+			.orderPic {
+				float: left;
+				width: 108px;
+				margin: 0 10px;
+			}
+			.orderMsg {
+				float: left;
+				width: 259px;
+				padding-right: 56px;
+			}
+			.orderMsg p {
+				line-height: 1.4;
+			}
+			.orderMsg p:nth-child(1) {
+				margin-bottom: 9px;
+			}
+			.orderMsg p:nth-child(2) {
+				color: #999;
+			}
+				display: block;
+				float: left;
+				line-height: 66px;
+			}
+			.orderTime {
+				width: 125px;
+			}
+			.numbersd {
+				width: 80px;
+			}
+			.sumMoney {
+				width: 100px;
+			}
+			.play {
+				display: block;
+				float: right;
+				width: 70px;
+				height: 28px;
+				line-height: 28px;
+				text-align: center;
+				background-color: #ea9b65;
+				color: white;
+				margin: 19px 12px;
+			}
+			.play:hover {
+				transition: 0.5s;
+				background-color: #e0884c;
+			}
+			.hollow {
+				width: 68px;
+				height: 26px;
+				border: 1px solid #ea9b65;
+				color: #ea9b65;
+				background-color: transparent;
+			}
+			.hollow:hover {
+				transition: 0.5s;
+				background-color: transparent;
+				color: #e0884c;
+			}
+			.text {
+				border-color: transparent;
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<header><!--头部标签-->
+			<div class="limit"><!--限位居中-->
+				<a class="jyLogo" href="javascript:void(0);"></a><!--精英吧logo-->
+				<ul class="navigation"><!--顶部导航条-->
+					<li><a href="javascript:void(0);">首页</a></li>
+					<li><a class="active" href="javascript:void(0);">线下课程</a></li>
+					<li><a href="javascript:void(0);">学习指导</a></li>
+					<li><a href="javascript:void(0);">企业招聘</a></li>
+					<li><a href="javascript:void(0);">互联网头条</a></li>
+					<li><a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a></li>
+				</ul>
+				<a href="javascript:void(0);" class="personalBtn"><!--个人中心-->
+					<div class="headPic"><!--头像-->
+						<img src="../img/head_footer/head_footer_03.png"/>
+					</div>
+					<span>个人中心</span>
+					<i class="iconfont down">&#xe818;</i>
+				</a>
+			</div>
+		</header>
+		<!--------------------分割线-------------------->
+		
+		<div class="limit">
+			<div class="content">
+				<div class="leftBar"><!--左侧导航栏-->
+					<ul class="leftList">
+						<li>
+							<a href="javascript:void(0);">个人中心</a>
+						</li>
+						<li class="active">
+							<a href="javascript:void(0);">我的订单</a>
+						</li>
+					</ul>
+				</div>
+				<div class="container">
+					<p class="cTitle">我的订单</p>
+					<div class="orderWrap">
+						<div class="head">
+							<ul class="orderMenu">
+								<li class="active"><a href="javascript:void(0);">全部</a></li>
+								<li><a href="javascript:void(0);">待付款</a></li>
+								<li><a href="javascript:void(0);">已支付</a></li>
+								<li><a href="javascript:void(0);">待评价</a></li>
+								<li><a href="javascript:void(0);">已完成</a></li>
+								<li><a href="javascript:void(0);">已取消</a></li>
+							</ul>
+							<span class="deleteOrder"><i class="iconfont trash">&#xe608;</i>删除订单</span>
+						</div>
+						<div class="orderPage">
+							<div class="opHead">
+								<p class="selectAll">
+									<span class="crossOut">
+										<i class="iconfont selected">&#xe655;</i>
+									</span>
+									<span>全选</span>
+								</p>
+								<span>订单信息</span>
+								<span>下单时间</span>
+								<span>数量</span>
+								<span>金额</span>
+								<span>交易状态</span>
+								<span>操作</span>
+							</div>
+							<div class="orderList">
+								<span class="crossOut">
+									<i class="iconfont selected">&#xe655;</i>
+								</span>
+								<div class="orderPic">
+									<img src="../img/userorder/userorder.png"/>
+								</div>
+								<div class="orderMsg">
+									<p>儿童手工纸 彩色皱纹纸DIY材料 手揉纸 幼儿园环境布置智</p>
+									<p>订单号：9374837</p>
+								</div>
+								<span class="orderTime">2015-02-15</span>
+								<span class="numbersd">1</span>
+								<span class="sumMoney">¥18900</span>
+								<span class="tradingStatus">待付款</span>
+								<a href="javascript:void(0);" class="play">付款</a>
+							</div>
+							<div class="orderList">
+								<span class="crossOut">
+									<i class="iconfont selected">&#xe655;</i>
+								</span>
+								<div class="orderPic">
+									<img src="../img/userorder/userorder.png"/>
+								</div>
+								<div class="orderMsg">
+									<p>儿童手工纸 彩色皱纹纸DIY材料 手揉纸 幼儿园环境布置智</p>
+									<p>订单号：9374837</p>
+								</div>
+								<span class="orderTime">2015-02-15</span>
+								<span class="numbersd">1</span>
+								<span class="sumMoney">¥18900</span>
+								<span class="tradingStatus">已付款</span>
+								<a href="javascript:void(0);" class="play hollow">退款</a>
+							</div>
+							<div class="orderList">
+								<span class="crossOut">
+									<i class="iconfont selected">&#xe655;</i>
+								</span>
+								<div class="orderPic">
+									<img src="../img/userorder/userorder.png"/>
+								</div>
+								<div class="orderMsg">
+									<p>儿童手工纸 彩色皱纹纸DIY材料 手揉纸 幼儿园环境布置智</p>
+									<p>订单号：9374837</p>
+								</div>
+								<span class="orderTime">2015-02-15</span>
+								<span class="numbersd">1</span>
+								<span class="sumMoney">¥18900</span>
+								<span class="tradingStatus">已完成</span>
+								<a href="javascript:void(0);" class="play hollow">评价</a>
+							</div>
+							<div class="orderList">
+								<span class="crossOut">
+									<i class="iconfont selected">&#xe655;</i>
+								</span>
+								<div class="orderPic">
+									<img src="../img/userorder/userorder.png"/>
+								</div>
+								<div class="orderMsg">
+									<p>儿童手工纸 彩色皱纹纸DIY材料 手揉纸 幼儿园环境布置智</p>
+									<p>订单号：9374837</p>
+								</div>
+								<span class="orderTime">2015-02-15</span>
+								<span class="numbersd">1</span>
+								<span class="sumMoney">¥18900</span>
+								<span class="tradingStatus">已完成</span>
+								<a href="javascript:void(0);" class="play hollow text">已评价</a>
+							</div>
+							<div class="orderList">
+								<span class="crossOut">
+									<i class="iconfont selected">&#xe655;</i>
+								</span>
+								<div class="orderPic">
+									<img src="../img/userorder/userorder.png"/>
+								</div>
+								<div class="orderMsg">
+									<p>儿童手工纸 彩色皱纹纸DIY材料 手揉纸 幼儿园环境布置智</p>
+									<p>订单号：9374837</p>
+								</div>
+								<span class="orderTime">2015-02-15</span>
+								<span class="numbersd">1</span>
+								<span class="sumMoney">¥18900</span>
+								<span class="tradingStatus">已完成</span>
+								<a href="javascript:void(0);" class="play hollow text">处理中</a>
+							</div>
+							<div class="orderList">
+								<span class="crossOut">
+									<i class="iconfont selected">&#xe655;</i>
+								</span>
+								<div class="orderPic">
+									<img src="../img/userorder/userorder.png"/>
+								</div>
+								<div class="orderMsg">
+									<p>儿童手工纸 彩色皱纹纸DIY材料 手揉纸 幼儿园环境布置智</p>
+									<p>订单号：9374837</p>
+								</div>
+								<span class="orderTime">2015-02-15</span>
+								<span class="numbersd">1</span>
+								<span class="sumMoney">¥18900</span>
+								<span class="tradingStatus">已完成</span>
+								<a href="javascript:void(0);" class="play hollow text">已退款</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--------------------分割线-------------------->
+		<footer><!--尾部标签-->
+			<div class="limit"><!--限位居中-->
+				<p class="friendlyLink"><!--跳转链接-->
+					<span>友情链接</span>
+					<a href="javascript:void(0);">蓝鸥科技</a>
+					<a href="javascript:void(0);">蓝鸥科技</a>
+					<a href="javascript:void(0);">蓝鸥科技</a>
+					<a href="javascript:void(0);">蓝鸥科技</a>
+					<a href="javascript:void(0);">蓝鸥科技</a>
+					<a href="javascript:void(0);">蓝鸥科技</a>
+					<a href="javascript:void(0);">蓝鸥科技</a>
+					<a href="javascript:void(0);">蓝鸥科技</a>
+					<a class="more" href="javascript:void(0);">更多<i class="iconfont">&#xe6ac;</i></a>
+					
+				</p>
+				<div class="comprehensiveInformation"><!--网站信息内容-->
+					<ul>
+						<li>
+							<p>我们的实验室</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">在线编程</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">奖学制度</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">在线班级</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">课后60分钟考试</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>关于我们</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">精英吧简介</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">联系我们</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">加入我们</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>现有课程</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">iOS</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Android</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">unity3D</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">H5</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>帮助</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">联系客服</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">版权声明</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">法律声明</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">服务条款</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>反馈方式</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">电子邮箱：help@xxxxx.com</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">微信反馈：精英吧微信公众号</a>
+						</li>
+						<li>
+							<img src="../img/head_footer/head_footer_10.png"/>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>精英吧APP扫描下载</p>
+						</li>
+						<li>
+							<img src="../img/head_footer/head_footer_07.png"/>
+						</li>
+					</ul>
+				</div>
+				<div class="license"><!--备案内容-->
+					<p>蓝鸥科技有限公司©1997-2016 <span>|</span> 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</p>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		$(function() {
+			var i = 0;
+			$(".selectAll .crossOut").on("click",function() {
+				i++;
+				if(i%2 != 0) {
+					$(".selected").show();
+				}else {
+					$(".selected").hide();
+				}
+				
+			})
+			$(".orderList").find(".crossOut").on("click",function() {
+				$(this).parents(".orderList").find(".selected").fadeToggle();
+			})
+		})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,164 @@
+.schedule {/*学习进度样式-开始*/
+	width: 1078px;
+	float: right;
+	line-height: 1;
+	margin-top: 26px;
+	
+}
+.schedule>p {
+	font-size: 1.4rem;
+	color: #999;
+	text-indent: 22px;
+}
+.scheduleList {
+	margin-top: 7px;
+}
+.scheduleList li {
+	height: 39px;
+	line-height: 39px;
+	font-size: 1.4rem;
+}
+.scheduleList .active {
+	background-color: #eef9f4;
+}
+.scheduleList li:nth-last-child(1) {
+	margin: 0;
+}
+.scheduleList li>span:nth-last-child(1) {
+	float: right;
+	margin-right: 72px;
+}
+.scheduleList li>span:nth-child(1) {
+	margin-left: 30px;
+	width: 540px;
+}
+.scheduleList span {
+	display: inline-block;
+	line-height: 14px;
+}
+.scheduleList p {
+	display: inline-block;
+}
+.scheduleList p span,.scheduleList li>span:nth-child(3) {
+	color: #666;
+	line-height: 39px;
+}
+.scheduleList li p>span:nth-child(1) {
+	width: 105px;
+}
+.grayBar,.greenBar {
+	display: inline-block;
+	height: 4px;
+}
+.grayBar {
+	position: relative;
+	width: 50px;
+	background-color: #ccc;
+	margin: 17.5px 0;
+	vertical-align: top;
+}
+.greenBar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #29b572;
+}
+.scheduleList li:nth-child(1) .greenBar {
+	width: 20px;
+}
+.scheduleList li:nth-child(2) .greenBar {
+	width: 10px;
+}
+.scheduleList li:nth-child(3) .greenBar {
+	width: 50px;
+}/*学习进度样式-结束*/
+/*内容头样式-结束*/
+
+/*中间内容样式-开始*/
+.centerContainer {
+	margin-top: 30px;
+	overflow: hidden;
+}
+.leftBar {/*左侧导航栏样式-开始*/
+	display: inline-block;
+	width: 171px;
+	background-color: white;
+	margin-right: 15px;
+}
+.leftList {
+	width: 169px;
+	margin: 1px auto;
+}
+.leftList li {
+	border-left: 2px solid transparent;
+	height: 48px;
+}
+.leftList .active {
+	border-color: #29b572;
+}
+.leftList a {
+	display: block;
+	line-height: 48px;
+	color: black;
+	font-size: 1.4rem;
+	text-indent: 16px;
+}/*左侧导航栏样式-结束*/
+.cdDown {
+	position: relative;
+	float: right;
+	width: 1064px;
+	background-color: white;
+	height: 378px;
+}
+.cdtitle {
+	line-height: 51px;
+	color: #999;
+	font-size: 1.4rem;
+	border-bottom: 1px solid #f2f2f2;
+	text-indent: 20px;
+}
+.couponWrap {
+	width: 883px;
+	margin: 60px auto 0;
+	overflow: hidden;
+	text-align: center;
+}
+.couponWrap>div {
+	float: left;
+}
+.couponWrap>div:nth-child(1) {
+	margin-right: 15px;
+}
+.coupon {
+	width: 434px;
+	height: 196px;
+	background-color: #29b572;
+}
+.coupon>p {
+	color: white;
+	font-size: 1.2rem;
+	line-height: 32px;
+}
+.disCount {
+	width: 432px;
+	height: 163px;
+	margin: 1px auto 0;
+	background-color: white;
+}
+.disCount>p:nth-child(1) {
+	font-size: 1.8rem;
+	color: #29b572;
+}
+.disCount>p:nth-child(2) {
+	font-size: 1.2rem;
+	color: #29b572;
+}
+.count {
+	font-size: 6.4rem;
+}
+.invalid {
+	background-color: #c7c7c7;
+}
+.invalid .disCount p {
+	color: #c7c7c7;
+}
