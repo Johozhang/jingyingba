@@ -239,6 +239,142 @@
 				border-color: transparent;
 				color: black;
 			}
+			.refund {
+				width: 947px;
+				margin: auto;
+				font-size: 1.4rem;
+				padding: 28px 0 24px;
+				background-color: #fafafa;
+			}
+			.refundCondition {
+				margin-bottom: 15px;
+				overflow: hidden;
+			}
+			.refundCondition * {
+				float: left;
+			}
+			.refundLine {
+				display: inline-block;
+				line-height: 30px;
+				vertical-align: top;
+				width: 112px;
+			}
+			.refundLine * {
+				float: right;
+			}
+			.refundLine i {
+				display: inline-block;
+				width: 15px;
+				color: red;
+			}
+			.refundOptionBar {
+				position: relative;
+				display: inline-block;
+				width: 216px;
+				height: 28px;
+				border: 1px solid #e8e8e8;
+				background-color: white;
+			}
+			.refundOptionBar input {
+				border: 0;
+				width: 196px;
+				height: 14px;
+				padding: 7px 10px;
+			}
+			.refundCondition:nth-of-type(3) .refundOptionBar {
+				width: 558px;
+				height: 120px;
+			}
+			.refundOptionBar textarea {
+				border: 0;
+				resize: none;
+				padding: 10px;
+				width: 538px;
+				height: 100px;
+				font-size: 1.4rem;
+			}
+			.down {
+				display: inline-block;
+				line-height: 28px; 
+				float: right;
+			}
+			.refundOption {
+				position: absolute;
+				top: 29px;
+				left: -1px;
+				background-color: white;
+				width: 216px;
+				text-indent: 10px;
+				line-height: 28px;
+				border: 1px solid #E8E8E8;
+				border-top: 0;
+				display: none;
+			}
+			.refundOption li {
+				border-top: 1px solid #e8e8e8;
+			}
+			.refundOption li:nth-child(1) {
+				border-top: 0;
+			}
+			.overplus {
+				display: inline-block;
+				font-size: 1.2rem;
+				color: #666;
+				line-height: 1;
+				margin-top: 110px;
+				text-indent: 10px;
+			}
+			.refundBtn {
+				display: block;
+				width: 109px;
+				height: 32px;
+				background-color: #29B572;
+				text-align: center;
+				line-height: 32px;
+				color: white;
+				margin-left: 112px;
+				margin-top: 20px;
+			}
+			.starBar {
+				height: 30px;
+			}
+			.starBar i {
+				display: inline-block;
+				line-height: 30px;
+				font-size: 1.4rem;
+				width: 20px;
+				color: #ffb200;
+				cursor: pointer;
+				-webkit-user-select: none;
+			}
+			.experience {
+				width: 538px;
+				height: 61px;
+				border: 1px solid #e8e8e8;
+				padding: 10px;
+			}
+			.experience span {
+				display: inline-block;
+				line-height: 22px;
+				margin: 0 10px 10px 0;
+				padding: 0 5px;
+			}
+			.solid {
+				background-color: #29b572;
+				color: white;
+			}
+			.gray {
+				background-color: gray;
+				color: white;
+				border: 1px solid gray;
+			}
+			.border {
+				border: 1px solid #29b572;
+			}
+			.starBar .icon-gray {
+				color:#999;
+			}
+				
 		</style>
 	</head>
 	<body>
@@ -339,6 +475,42 @@
 								<span class="tradingStatus">已付款</span>
 								<a href="javascript:void(0);" class="play hollow hollowBtn">退款</a>
 							</div>
+							<div class="refund">
+								<div class="refundCondition">
+									<p class="refundLine">
+										<span>退款原因：</span>
+										<i class="iconfont">&#xe692;</i>
+									</p>
+									<div class="refundOptionBar">
+										<i class="iconfont down">&#xe62a;</i>
+										<ul class="refundOption">
+											<li>发错货了</li>
+											<li>不想要了</li>
+											<li>其他原因</li>
+										</ul>
+									</div>
+								</div>
+								<div class="refundCondition">
+									<p class="refundLine">
+										<span>退款金额：</span>
+										<i class="iconfont">&#xe692;</i>
+									</p>
+									<div class="refundOptionBar">
+										<input type="text" />
+									</div>
+								</div>
+								<div class="refundCondition">
+									<p class="refundLine">
+										<span>退款说明：</span>
+									</p>
+									<div class="refundOptionBar">
+										<textarea>淘宝美工实战案例体验课【特邀客座讲师】淘宝美工设计师必学课程，免费领取学习视
+频加 QQ群:387078125淘宝美工设计师必学课程淘宝美</textarea>
+									</div>
+									<span class="overplus">还可填写200个字</span>
+								</div>
+								<a class="refundBtn" href="javascript:void(0);">提交退款申请</a>
+							</div>
 							<div class="orderList">
 								<span class="crossOut">
 									<i class="iconfont selected">&#xe655;</i>
@@ -356,22 +528,45 @@
 								<span class="tradingStatus">已完成</span>
 								<a href="javascript:void(0);" class="play hollow hollowBtn">评价</a>
 							</div>
-							<div class="orderList">
-								<span class="crossOut">
-									<i class="iconfont selected">&#xe655;</i>
-								</span>
-								<div class="orderPic">
-									<img src="../img/userorder/userorder.png"/>
+							<div class="refund">
+								<div class="refundCondition">
+									<p class="refundLine">
+										<span>评分：</span>
+										<i class="iconfont">&#xe692;</i>
+									</p>
+									<div class="starBar">
+										<i class="iconfont">&#xe754;</i>
+										<i class="iconfont">&#xe754;</i>
+										<i class="iconfont">&#xe754;</i>
+										<i class="iconfont">&#xe754;</i>
+										<i class="iconfont icon-gray">&#xe754;</i>
+									</div>
 								</div>
-								<div class="orderMsg">
-									<p>儿童手工纸 彩色皱纹纸DIY材料 手揉纸 幼儿园环境布置智</p>
-									<p>订单号：9374837</p>
+								<div class="refundCondition">
+									<p class="refundLine">
+										<span>心得：</span>
+										<i class="iconfont">&#xe692;</i>
+									</p>
+									<div class="experience">
+										<span class="solid">交通便利(323)</span>
+										<span class="border">学习气氛浓厚(1200)</span>
+										<span class="solid">交通便利(323)</span>
+										<span class="solid gray">学习气氛浓厚(1200)</span>
+										<span class="solid gray">交通便利(323)</span>
+										<span class="border">学习气氛浓厚(1200)</span>
+									</div>
 								</div>
-								<span class="orderTime">2015-02-15</span>
-								<span class="numbersd">1</span>
-								<span class="sumMoney">¥18900</span>
-								<span class="tradingStatus">已完成</span>
-								<a href="javascript:void(0);" class="play hollow text">已评价</a>
+								<div class="refundCondition">
+									<p class="refundLine">
+										<span>评价：</span>
+									</p>
+									<div class="refundOptionBar">
+										<textarea>淘宝美工实战案例体验课【特邀客座讲师】淘宝美工设计师必学课程，免费领取学习视
+频加 QQ群:387078125淘宝美工设计师必学课程淘宝美</textarea>
+									</div>
+									<span class="overplus">还可填写200个字</span>
+								</div>
+								<a class="refundBtn" href="javascript:void(0);">提交退款申请</a>
 							</div>
 							<div class="orderList">
 								<span class="crossOut">
@@ -387,25 +582,8 @@
 								<span class="orderTime">2015-02-15</span>
 								<span class="numbersd">1</span>
 								<span class="sumMoney">¥18900</span>
-								<span class="tradingStatus">已完成</span>
-								<a href="javascript:void(0);" class="play hollow text">处理中</a>
-							</div>
-							<div class="orderList">
-								<span class="crossOut">
-									<i class="iconfont selected">&#xe655;</i>
-								</span>
-								<div class="orderPic">
-									<img src="../img/userorder/userorder.png"/>
-								</div>
-								<div class="orderMsg">
-									<p>儿童手工纸 彩色皱纹纸DIY材料 手揉纸 幼儿园环境布置智</p>
-									<p>订单号：9374837</p>
-								</div>
-								<span class="orderTime">2015-02-15</span>
-								<span class="numbersd">1</span>
-								<span class="sumMoney">¥18900</span>
-								<span class="tradingStatus">已完成</span>
-								<a href="javascript:void(0);" class="play hollow text">已退款</a>
+								<span class="tradingStatus">待付款</span>
+								<a href="javascript:void(0);" class="play playBtn">付款</a>
 							</div>
 						</div>
 					</div>
@@ -538,6 +716,10 @@
 			})
 			$(".orderList").find(".crossOut").on("click",function() {
 				$(this).parents(".orderList").find(".selected").fadeToggle();
+			})
+			$(".starBar i").on("click",function() {
+				$(".starBar i").removeClass("icon-gray");
+				$(this).nextAll().addClass("icon-gray")
 			})
 		})
 		</script>
