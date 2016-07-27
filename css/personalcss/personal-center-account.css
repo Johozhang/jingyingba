@@ -103,7 +103,7 @@
 	font-size: 1.4rem;
 	text-indent: 16px;
 }/*左侧导航栏样式-结束*/
-.cdDown {
+.cdDown,#article {
 	position: relative;
 	float: right;
 	width: 1064px;
@@ -186,4 +186,48 @@
 	height: 14px;
 	line-height: 14px;
 	padding: 11px 10px;
+}
+
+/*article*/
+
+#article {
+	height: auto;
+}
+#articlehead {
+	color: #333;
+	margin: 40px 34px 0px 34px;
+	padding-bottom: ;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#articlehead h2 {
+	font-size: 2.6rem;
+}
+
+#articlehead p {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	color: #858585;
+
+}
+
+#articlecont {
+	margin: 40px 34px 80px 34px;
+}
+
+#articlecont p{
+	text-indent: 2em;
+	color: #333;
+	font-size: 1.6rem;
+}
+
+#articlecont * {
+	line-height: 31px;
+	margin-top: 40px;
+}
+
+#articlecont .imgbox {
+	width: 500px;
+	height: 330px;
+	margin: 0 auto;
 }
