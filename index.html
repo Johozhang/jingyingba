@@ -448,16 +448,24 @@
 				
 			</div>
 		</footer>
-		<div id="top">
+		<a id="top" href="javascript:void(0)">
 			<img src="img/index/city.png"/>
-		</div>
+		</a>
 			<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
 			<script type="text/javascript" src="js/jquery.min.js"></script>
 			<script type="text/javascript">
+//			返回顶部
+			$("#top").click(function(){
+				$("html,body").animate({
+					scrollTop:0
+				},400,"swing")
+			})
+			
+//			城市切换
 			$(".city p").click(function(){$(".city i,.city-cont").fadeToggle()});
 			$(".city-cont").mouseleave(function(){$(".city i,.city-cont").hide()});
 			
-			
+//			banner轮播图
 				new Swiper(".swiper-container", {
 					autoplay: 2000,
 					speed: 2000, //控制速度，滑动时间

@@ -57,7 +57,6 @@ a {
 	width:50%;
 	text-align: center;
 	padding: 18px 0px;
-
 }
 
 
@@ -69,10 +68,6 @@ a {
 
 .loginmain {
 	margin: 20px;
-/*	*/
-}
-#loginmain {
-	
 }
 
 #register {
@@ -197,6 +192,10 @@ a {
 
 #agree {
 	color: #008800;
+}
+
+#code {
+	position: absolute;
 }
 
 

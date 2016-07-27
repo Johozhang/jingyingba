@@ -126,6 +126,8 @@
 		<script type="text/javascript" src="js/jquery.min.js">
 		</script>
 		<script type="text/javascript">
+
+		
 			$(".loginhead a").on("click", function() {
 				$(this).addClass("logincho").siblings().removeClass("logincho");
 				var index = $(this).index();
@@ -164,8 +166,6 @@
 
 			//			get验证码
 			var gety = document.getElementById("getyanzhengma");
-			
-			
 			var timer = 0;
 			function timeRemaid() {
 				var timeAll = 58;
@@ -179,16 +179,26 @@
 						gety.style.backgroundColor = "#fff";
 						gety.style.color = "#008800";
 						gety.style.border = "1px solid #008800";
+						clickFlag = true;
 					}
-				}, 1000)
+				}, 100)
 			}
+//			给click设置布尔值
+			var clickFlag = true;
 			gety.onclick = function() {
-				timeRemaid();
-				gety.innerHTML = "59秒";
-				gety.style.backgroundColor = "#b5b5b5";
-				gety.style.color = "#fff";
-				gety.style.border = "none";
+				
+				if(clickFlag) {
+					timeRemaid();
+				
+					gety.innerHTML = "59秒";
+					gety.style.backgroundColor = "#b5b5b5";
+					gety.style.color = "#fff";
+					gety.style.border = "none";
+				}
+				clickFlag = false;
 			}
+			
+
 		</script>
 	</body>
 
