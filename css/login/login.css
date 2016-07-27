@@ -104,7 +104,7 @@ a {
 	background-color: rgba(255,255,255,1);
 }
 
-#loginphone,#password,#code,#regphone {
+#loginphone,#password,#code,#regphone,#repassword {
 	border: none;
 }
 

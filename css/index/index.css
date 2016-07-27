@@ -121,17 +121,6 @@ header {
 	overflow: hidden;
 }
 
-.swiper-pagination-switch {
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
-	background: #999;
-	box-shadow: 0px 1px 2px #555 inset;
-	margin: 0 3px;
-	cursor: pointer;
-}
-
 .pagination {
 	position: absolute;
 	width: 100%;
@@ -554,8 +543,9 @@ header {
 	width: 60px;
 	height: 60px;
 	background-color: #008000;
-	bottom: 120px;
-	right: 140px;
+	bottom: 20px;
+	left: 85%;
+	/*left: 1800px;*/
 	cursor: pointer;
 }
 
