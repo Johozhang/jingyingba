@@ -6,7 +6,7 @@
 	
 }
 .schedule>p {
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: #999;
 	text-indent: 22px;
 }
@@ -16,7 +16,7 @@
 .scheduleList li {
 	height: 39px;
 	line-height: 39px;
-	font-size: 1.4rem;
+	font-size: 14px;
 }
 .scheduleList .active {
 	background-color: #eef9f4;
@@ -100,7 +100,7 @@
 	display: block;
 	line-height: 48px;
 	color: black;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-indent: 16px;
 }/*左侧导航栏样式-结束*/
 .cdDown {
@@ -113,7 +113,7 @@
 .cdtitle {
 	line-height: 51px;
 	color: #999;
-	font-size: 1.4rem;
+	font-size: 14px;
 	border-bottom: 1px solid #f2f2f2;
 	text-indent: 20px;
 }
@@ -136,7 +136,7 @@
 }
 .coupon>p {
 	color: white;
-	font-size: 1.2rem;
+	font-size: 12px;
 	line-height: 32px;
 }
 .disCount {
@@ -146,15 +146,15 @@
 	background-color: white;
 }
 .disCount>p:nth-child(1) {
-	font-size: 1.8rem;
+	font-size: 18px;
 	color: #29b572;
 }
 .disCount>p:nth-child(2) {
-	font-size: 1.2rem;
+	font-size: 12px;
 	color: #29b572;
 }
 .count {
-	font-size: 6.4rem;
+	font-size: 64px;
 }
 .invalid {
 	background-color: #c7c7c7;

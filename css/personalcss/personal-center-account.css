@@ -6,7 +6,7 @@
 	
 }
 .schedule>p {
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: #999;
 	text-indent: 22px;
 }
@@ -16,7 +16,7 @@
 .scheduleList li {
 	height: 39px;
 	line-height: 39px;
-	font-size: 1.4rem;
+	font-size: 14px;
 }
 .scheduleList .active {
 	background-color: #eef9f4;
@@ -100,7 +100,7 @@
 	display: block;
 	line-height: 48px;
 	color: black;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-indent: 16px;
 }/*左侧导航栏样式-结束*/
 .cdDown,#article {
@@ -113,11 +113,11 @@
 .classMate {
 	width: 590px;
 	margin: 127px auto 0;
-	font-size: 1.4rem;
+	font-size: 14px;
 	overflow: hidden;
 }
 .classMate>p {
-	font-size: 1.4rem;
+	font-size: 14px;
 	line-height: 1;
 	margin-bottom: 18px;
 	text-indent: 109px;
@@ -159,7 +159,7 @@
 	display: inline-block;
 	text-indent: 10px;
 	color: #999;
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 .classMate>a {
 	display: block;
@@ -201,7 +201,7 @@
 }
 
 #articlehead h2 {
-	font-size: 2.6rem;
+	font-size: 26px;
 }
 
 #articlehead p {
@@ -218,7 +218,7 @@
 #articlecont p{
 	text-indent: 2em;
 	color: #333;
-	font-size: 1.6rem;
+	font-size: 16px;
 }
 
 #articlecont * {

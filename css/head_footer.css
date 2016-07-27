@@ -29,7 +29,7 @@ header {
 	height: 90px;
 	vertical-align: top;
 	line-height: 90px;
-	font-size: 1.6rem;
+	font-size: 16px;
 }
 .navigation {
 	margin-left: 30px;
@@ -62,16 +62,16 @@ header {
 	display: inline-block;
 	line-height: 90px;
 	vertical-align: top;
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 .down {
-	font-size: 1.2rem;
+	font-size: 12px;
 	display: inline-block;
 	line-height: 84px;
 	vertical-align: top;
 }
 .cross {
-	font-size: 1.8rem;
+	font-size: 18px;
 }
 footer {
 	background-color: white;
@@ -82,10 +82,10 @@ footer {
 	border-bottom: 1px solid #e8e8e8;
 }
 .friendlyLink span {
-	font-size: 2.2rem;
+	font-size: 22px;
 }
 .friendlyLink a {
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: black;
 	color: #666;
 	margin: 0 20px;
@@ -127,10 +127,10 @@ footer {
 	line-height: 1;
 }
 .comprehensiveInformation ul li p {
-	font-size: 1.4rem;
+	font-size: 14px;
 }
 .comprehensiveInformation ul li a {
-	font-size: 1.3rem;
+	font-size: 13px;
 	color: #666;
 }
 .comprehensiveInformation ul li:nth-child(1) {
@@ -138,7 +138,7 @@ footer {
 }
 .license {
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 13px;
 	color: #808080;
 	height: 100px;
 	line-height: 1;
@@ -147,5 +147,5 @@ footer {
 	padding-top: 20px;
 }
 .license span {
-	font-size: 1.6rem;
+	font-size: 16px;
 }

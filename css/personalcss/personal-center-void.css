@@ -6,13 +6,13 @@
 }
 .schedule>p {
 	width: 100%;
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: #999;
 	text-indent: 22px;
 	margin-top: 26px;
 }
 .schedule>p:nth-child(2) {
-	font-size: 1.6rem;
+	font-size: 16px;
 	text-align: center;
 	text-indent: 0;
 	margin-top: 40px;
@@ -48,7 +48,7 @@
 	display: block;
 	line-height: 48px;
 	color: black;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-indent: 16px;
 }/*左侧导航栏样式-结束*/
 /*课程内容详细-开始*/
@@ -75,7 +75,7 @@
 	width: 118px;
 	text-align: center;
 	color: black;
-	font-size: 1.6rem;
+	font-size: 16px;
 	display: inline-block;
 	line-height: 54px;
 	border-right: 1px solid transparent;
@@ -91,7 +91,7 @@
 	margin-top: -24px;
 	width: 100%;
 	text-align: center;
-	font-size: 1.6rem;
+	font-size: 16px;
 }
 .cdDown>p:nth-child(2) a {
 	color: #29b572;
