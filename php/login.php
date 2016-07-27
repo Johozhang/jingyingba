@@ -1,5 +1,6 @@
 <?php
 	session_start();
+    include_once("conn.php");//链接数据库
 	header("Content-Type:text/html;charset=utf8"); 
 	$username = $_POST["phone"];
 	$password = $_POST["password"];
@@ -9,7 +10,7 @@
 		echo <<< EOD
 		<script type="text/javascript">
 			setTimeout(function() {
-				location.href = "login.html";
+				location.href = "../login.html";
 			},3000);
 		</script>
 EOD;
@@ -34,13 +35,8 @@ EOD;
 	// echo $username;
 	// echo $password;
 	//连接数据库
-	$url = "localhost:3306";
-	$root = "root";
-	$pwd = "";
-	$conn = @mysql_connect($url,$root,$pwd) or die("数据库连接失败");
-	mysql_select_db("gzh160301");
-	mysql_query("set names utf8");
-	$sql = "select * from user where `username` = '$username' and `password` = md5('$password')";
+
+	$sql = "select * from user where `name` = '$username' and `pwd` = md5('$password')";
 	// echo $sql;
 	$result = mysql_query($sql);
 	// echo mysql_num_rows($result);
