@@ -126,8 +126,14 @@
 		<script type="text/javascript" src="js/jquery.min.js">
 		</script>
 		<script type="text/javascript">
-
-		
+//		location模拟点击,获取传过来的id,substring(1)表示从字符串第2位开始获取
+			if(location.hash.substring(1) == "zhuce") {
+					$(".loginhead a").eq(1).addClass("logincho").siblings().removeClass("logincho");
+					$("form").hide();
+					$("form").eq(1).show();
+			}
+			
+//			登录注册页面tab切换
 			$(".loginhead a").on("click", function() {
 				$(this).addClass("logincho").siblings().removeClass("logincho");
 				var index = $(this).index();
