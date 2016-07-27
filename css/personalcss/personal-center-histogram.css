@@ -89,9 +89,7 @@
 	border-left: 2px solid transparent;
 	height: 48px;
 }
-.leftList .active {
-	border-color: #29b572;
-}
+
 .leftList a {
 	display: block;
 	line-height: 48px;

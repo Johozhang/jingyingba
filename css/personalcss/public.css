@@ -7,6 +7,12 @@
 	height: 176px;
 	background-color: white;
 }
+
+.leftList .active {
+	border-color: #29b572;
+	background-color: #fafafa;
+}
+
 .studentMsg {/*学员信息样式-开始*/
 	display: inline-block;
 	width: 171px;
