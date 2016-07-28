@@ -23,7 +23,6 @@ a {
 	width: 1250px;
 	position: relative;
 	margin: 0 auto;
-	
 }
 
 #login {
@@ -97,15 +96,37 @@ a {
 
 #loginList li,#regList li{
 	width: 260px;
-	height: 20px;
+	height: 15px;
 	border: 1px solid #B4B4B4;
 	padding: 9px;
-	margin-bottom:22px ;
+	margin-bottom:25px ;
 	background-color: rgba(255,255,255,1);
 }
 
 #loginphone,#password,#code,#regphone,#repassword {
-	border: none;
+	border: 0;
+	border-left: 2px solid #808080;
+	margin-left: 20px;
+}
+
+.loginList0 {
+	background-image: url(../../img/jingyingba.png);
+	background-repeat: no-repeat;
+	background-size: 16px 1100px;
+}
+
+.loginList1{
+	margin-bottom: 30px;
+	background-position: 6px 8px;
+	}
+	
+.loginList2 {
+	background-position: 6px -17px;
+}
+
+.loginList3 {
+	background-position: 6px -41px;
+	height: 12px;
 }
 
 #codeimg,#getyanzhengma {

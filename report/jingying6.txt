@@ -24,4 +24,10 @@
 	完成页面：
 		
 	遇到问题：
-		
+		<php>
+			if(is_set($_SESSION["username"])) {
+				
+			}else {
+				
+			}
+		</php>
