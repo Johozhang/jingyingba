@@ -3,7 +3,7 @@ html,body {
 	height: 100%;
 	background-color: #f5f5f5;
 }
-header {
+#header {
 	background-color: white;
 	height: 90px;
 }
@@ -69,7 +69,7 @@ header {
 .cross {
 	font-size: 1.8rem;
 }
-footer {
+#footer {
 	background-color: white;
 }
 .friendlyLink {
@@ -100,21 +100,18 @@ footer {
 	margin: 0 57px;
 	
 }
-.comprehensiveInformation ul:nth-child(1) {
+.comprehensiveInformation .ul1 {
 	margin: 0 23px 0 0;
 }
-.comprehensiveInformation ul:nth-child(5) li:nth-child(4) {
+.comprehensiveInformation .ul5 li img {
 	width: 78px;
 }
-.comprehensiveInformation ul:nth-child(6) {
+.comprehensiveInformation .ul6 {
 	margin: 0;
 	float: right;
 }
-.comprehensiveInformation ul:nth-child(6) li:nth-child(2) {
+.comprehensiveInformation .ul6 li img {
 	width: 122px;
-}
-.comprehensiveInformation ul li:nth-last-child(1) {
-	margin: 0;
 }
 .comprehensiveInformation ul li {
 	margin-bottom: 16px;
@@ -129,7 +126,7 @@ footer {
 	font-size: 1.3rem;
 	color: #666;
 }
-.comprehensiveInformation ul li:nth-child(1) {
+.comprehensiveInformation ul .li1 {
 	margin-bottom: 33px;
 }
 .license {

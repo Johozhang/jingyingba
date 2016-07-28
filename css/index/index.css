@@ -1,9 +1,10 @@
 .limit {
 	overflow: inherit;
 }
+
 .city {
 	float: left;
-	font-size: 1.5rem;
+	font-size: 15px;
 	width: 72px;
 	height: 26px;
 	cursor: pointer;
@@ -11,7 +12,6 @@
 	border-radius: 2px;
 	border: 1px solid #e0e0e0;
 	position: relative;
-	/*z-index: 1000;*/
 }
 
 .city p {
@@ -97,7 +97,7 @@ header {
 
 .loginreg a {
 	color: #000;
-	font-size: 1.4rem;
+	font-size: 14px;
 	padding: 0 10px;
 }
 
@@ -176,7 +176,7 @@ header {
 .centerms {
 	width: 150px;
 	float: right;
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-align: left;
 }
 
@@ -203,7 +203,7 @@ header {
 
 #centercon {
 	margin-top: 14px;
-	font-size: 1.4rem;
+	font-size: 14px;
 	height: 200px;
 	border-bottom: 1px solid #e8e8e8;
 }
@@ -336,13 +336,13 @@ header {
 }
 
 .kechengxiang h3 {
-	font-size: 1.8rem;
+	font-size: 18px;
 	font-weight: 900;
 }
 
 .kechengxiang p {
 	color: #999;
-	font-size: 1.4rem;
+	font-size: 14px;
 }
 
 
@@ -352,7 +352,7 @@ header {
 /*online*/
 
 #contain h2 {
-	font-size: 2.4rem;
+	font-size: 24px;
 	margin: 20px 0;
 }
 
@@ -415,7 +415,7 @@ header {
 
 #different li p {
 	text-align: left;
-	font-size: 1.3rem;
+	font-size: 13px;
 	color: #999;
 }
 
@@ -427,7 +427,7 @@ header {
 }
 
 #different li h3 {
-	font-size: 1.8rem;
+	font-size: 18px;
 	font-weight: 900;
 }
 
@@ -450,7 +450,7 @@ header {
 }
 
 .person {
-	width: 200px;
+	width: 199px;
 	height: 350px;
 	border: 2px solid;
 	border-image: linear-gradient(transparent,#f2f2f2)30 30;	
@@ -467,7 +467,7 @@ header {
 	}
 	
 .peresonmoney{
-		font-size: 2.4rem;
+		font-size: 24px;
 	}
 	
 	/*agency*/
@@ -531,7 +531,7 @@ header {
 }
 
 #friendList li a {
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: #333;
 }
 
