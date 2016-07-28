@@ -27,7 +27,6 @@
 	left: 0px;
 	width: 72px;
 	height: 1px;
-	/*display: none;*/
 	z-index: 99999;
 	background: #fff;
 	position: absolute;
@@ -81,7 +80,7 @@
 	text-align: center;
 }
 
-header {
+#header {
 	height: 100px;
 	/*z-index: 99999;*/
 }
@@ -240,25 +239,25 @@ header {
 	width: 40px;
 	height: 36px;
 	margin: 12px auto;
-	background-image: url(../../img/index/rumen.png);
+	background: url(../../img/index/rumen.png);
 	background-repeat: no-repeat;
-	background-size: 220px 36px;
+	/*background-size: 220px 36px;*/
 }
 
 .rumen1 {
-	background-position-x: 0px;
+	background-position: 0px;
 }
 
 .rumen2 {
-	background-position-x: -55px;
+	background-position: -45px;
 }
 
 .rumen3 {
-	background-position-x: -115px;
+	background-position: -95px;
 }
 
 .rumen4 {
-	background-position-x: -170px;
+	background-position: -135px;
 	width: 60px;
 }
 
@@ -299,7 +298,7 @@ header {
 }
 
 .kechengtu {
-	width: 70px;
+	width: 65px;
 	height: 60px;
 	background-image: url(../../img/index/kecheng.png);
 	background-repeat: no-repeat;
@@ -307,25 +306,20 @@ header {
 	float: left;
 	margin: 30px 0;
 }
-
-.kechengtu1 {
-	background-position-x: 2px;
-}
-
 .kechengtu2 {
-	background-position-x: -65px;
+	background-position: -65px;
 }
 
 .kechengtu3 {
-	background-position-x: -135px;
+	background-position: -135px;
 }
 
 .kechengtu4 {
-	background-position-x: -205px;
+	background-position: -200px;
 }
 
 .kechengtu5 {
-	background-position-x: -275px;
+	background-position: -265px;
 }
 
 .kechengxiang {
@@ -505,6 +499,22 @@ header {
 
 #partner li {
 	margin: 10px 20px;
+}
+
+#agencyright,#agencyleft {
+	line-height: 150px;
+	font-size: 30px;
+	color: #666666;
+}
+
+#agencyleft {
+	float: left;
+	padding-left: 10px;
+}
+
+#agencyright {
+	float: right;
+	padding-right: 10px;
 }
 
 /*partner*/
