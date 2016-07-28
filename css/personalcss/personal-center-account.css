@@ -79,6 +79,10 @@
 	margin-top: 30px;
 	overflow: hidden;
 }
+<<<<<<< HEAD
+/*左侧导航栏样式-结束*/
+.cdDown {
+=======
 .leftBar {/*左侧导航栏样式-开始*/
 	display: inline-block;
 	width: 171px;
@@ -104,6 +108,7 @@
 	text-indent: 16px;
 }/*左侧导航栏样式-结束*/
 .cdDown,#article {
+>>>>>>> e2c708ae9d270e416967d69834b8ae4db53d083f
 	position: relative;
 	float: right;
 	width: 1064px;
