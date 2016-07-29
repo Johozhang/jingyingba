@@ -10,35 +10,35 @@
 </head>
 <body>
 <!--***********************header开始**************************-->
-<header>
-	<div class="limit">
-		<a class="jyLogo" href="../../index.html"></a>
-		<ul class="navigation">
-			<li><a class="active" href="javascript:void(0);">课程</a></li>
-			<li><a href="javascript:void(0);">学习指导</a></li>
-			<li><a href="javascript:void(0);">企业招聘</a></li>
-			<li><a href="javascript:void(0);">互联网头条</a></li>
-			<li><a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a></li>
-		</ul>
-		<a href="javascript:void(0);" class="personalBtn">
-			<div class="headPic">
-				<img src="../../img/head_footer/head_footer_03.png"/>
+		<div id="header"><!--头部标签-->
+			<div class="limit"><!--限位居中-->
+				<a class="jyLogo" href="../../index.html"></a><!--精英吧logo-->
+				<ul class="navigation"><!--顶部导航条-->
+					<li><a class="active" href="javascript:void(0);">课程</a></li>
+					<li><a href="javascript:void(0);">学习指导</a></li>
+					<li><a href="javascript:void(0);">企业招聘</a></li>
+					<li><a href="javascript:void(0);">互联网头条</a></li>
+					<li><a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a></li>
+				</ul>
+				<a href="javascript:void(0);" class="personalBtn"><!--个人中心-->
+					<div class="headPic"><!--头像-->
+						<img src="../../img/head_footer/head_footer_03.png"/>
+					</div>
+					<span>个人中心</span>
+					<i class="iconfont down">&#xe818;</i>
+				</a>
 			</div>
-			<span>个人中心</span>
-			<i class="iconfont down">&#xe818;</i>
-		</a>
-	</div>
-</header>
+		</div>
 <!--***********************header结束**************************-->
 
 
 <!--***********************内容开始**************************-->
-<section class="course-details-top">
+<div class="course-details-top">
 <div class="left clearfix">
 	<img src="../../img/course/example.png">
 	<div class="school-intro">
-		<p>北京蓝鸥科技教育培训学校有限公司</p>
-		<div>
+		<p class="school-intro-company">北京蓝鸥科技教育培训学校有限公司</p>
+		<div class="school-intro-content">
 			<p>北京市海淀区清河中街金五星大厦五楼</p>
 			<div class="school-intro-stars clearfix">
 			<span class="active"></span>
@@ -48,8 +48,8 @@
 			<span></span>
 			</div>
 			<div class="sign-num">
-				<span>87</span>
-				<span>人已报名</span>
+				<span class="sign-num1">87</span>
+				<span class="sign-num2">人已报名</span>
 			</div>
 			<a href="javascript:void(0)"><span class="pre-advice">预约咨询</span></a>
 		</div>
@@ -60,50 +60,50 @@
 	<div id="allmap"></div>
 </div>
 	
-</section>
+</div>
 
 
-<section class="course-details-below clearfix">
+<div class="course-details-below clearfix">
 	<div class="left">
-		<nav>
+		<div>
 			<ul class="course-reorder clearfix">
-				<li class="course-reorder-active"><a href="javascript:void(0)" class="default">本校课程</a></li>
-				<li><a href="javascript:void(0)" class="sale-volume">学校简介</a></li>
-				<li><a href="javascript:void(0)" class="sale-price">官方相册</a></li>
-				<li><a href="javascript:void(0)" class="sale-price">用户评价</a></li>
+				<li class="course-reorder-active"><a href="javascript:void(0);" class="default">本校课程</a></li>
+				<li><a href="javascript:void(0);" class="sale-volume">学校简介</a></li>
+				<li><a href="javascript:void(0);" class="sale-price">官方相册</a></li>
+				<li><a href="javascript:void(0);" class="sale-price">用户评价</a></li>
 			</ul>
-		</nav>
+		</div>
 
 
 
 
 <!-- 本校课程 -->
 
-<section class="school-course">
+<div class="school-course choose">
 <ul class="school-courselist clearfix">
 	<li class="school-course-details clearfix">
 	<a href="javascript:void(0)">
 		<div class="left clearfix">
 			<p class="clearfix">
-				<span>一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</span>
-				<span>线上</span>
+				<span class="left-span-1">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</span>
+				<span class="left-span-2">线上</span>
 			</p>
-			<p>
-				<span>蓝鸥科技教育有限公司</span>
-				<span>120天</span>
-				<span>已售</span>
-				<span>1200</span>
-				<span>评分</span>
-				<span>8.9</span>
-				<span>分</span>
+			<p class="left-p2">
+				<span class="left-p2-1">蓝鸥科技教育有限公司</span>
+				<span class="left-p2-2">120天</span>
+				<span class="left-p2-3">已售</span>
+				<span class="left-p2-4">1200</span>
+				<span class="left-p2-5">评分</span>
+				<span class="left-p2-6">8.9</span>
+				<span class="left-p2-7">分</span>
 			</p>
 		</div>
 		<div class="right clearfix">
-			<p class="clearfix">	
+			<p class="right-p1 clearfix">	
 				<span>1288</span>		
-			    <span>￥</span>
+			    <span class="right-p1-2">￥</span>
 			</p>
-			<p>
+			<p class="right-p2">
 				<del>5000</del>
 				<span>价值：</span>
 
@@ -115,26 +115,25 @@
 	<a href="javascript:void(0)">
 		<div class="left clearfix">
 			<p class="clearfix">
-				<span>一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</span>
-				<span>线下</span>
+				<span class="left-span-1">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</span>
+				<span class="offline-p1-2 left-span-2">线下</span>
 			</p>
-			<p>
-				<span>蓝鸥科技教育有限公司</span>
-				<span>120天</span>
-				<span>已售</span>
-				<span>1200</span>
-				<span>评分</span>
-				<span>8.9</span>
-				<span>分</span>
+			<p class="left-p2">
+				<span class="left-p2-1">蓝鸥科技教育有限公司</span>
+				<span class="left-p2-2">120天</span>
+				<span class="left-p2-3">已售</span>
+				<span class="left-p2-4">1200</span>
+				<span class="left-p2-5">评分</span>
+				<span class="left-p2-6">8.9</span>
+				<span class="left-p2-7">分</span>
 			</p>
 		</div>
 		<div class="right clearfix">
-			<p class="clearfix">
-				<span>1288</span>
-			    <span>￥</span>
-
+			<p class="right-p1 clearfix">	
+				<span>1288</span>		
+			    <span class="right-p1-2">￥</span>
 			</p>
-			<p>
+			<p class="right-p2">
 				<del>5000</del>
 				<span>价值：</span>
 
@@ -143,10 +142,10 @@
 		</a>
 	</li>
 </ul>
-	
-</section>
+
+</div>
 <!-- 学校简介 -->
-<section class="school-instro">
+<div class="school-instro choose">
 <p class="topic">蓝鸥科技教育有限公司简介</p>
 <p class="content">
 	蓝鸥是一家集产、学、研为一体的综合性移动互联网研发培训机构，致力于iOS开发、Unity3D游戏开发、Android开发和HTML5前端开发等软件人才的培养。蓝鸥强大的师资阵容，纯净的教育理念，严格的管理制度，使其成为了美国苹果公司AATC认证官方授权培训中心、Unity官方授权培训中心，也是目前国内仅有的一家”两大官方授权于一身“的移动互联网培训企业。2012年10月18日，刘辉、李静波、崔亚允，中国移动互联网开发行业的三位领军人物，强强联手，倾力打造了蓝鸥。“三巨头”（开发、技术、教学）护航蓝鸥一路向前，经过短短的三年，蓝鸥已拥有在职员工400多人，学员上万人，在全国共拥有8家实训中心、2家中心直属分院和1家项目研发基地，分别是：北京实训中心、上海实训中心、广州实训中心、大连实训中心、郑州实训中心、西安实训中心、武汉实训中心、成都实训中心、北京中心直属分院（石家庄）、大连中心直属分院（哈尔滨）和上海项目研发基地。
@@ -155,22 +154,22 @@
        蓝鸥是一家集产、学、研为一体的综合性移动互联网研发培训机构，致力于iOS开发、Unity3D游戏开发、Android开发和HTML5前端开发等软件人才的培养。蓝鸥强大的师资阵容，纯净的教育理念，严格的管理制度，使其成为了美国苹果公司AATC认证官方授权培训中心、Unity官方授权培训中心，也是目前国内仅有的一家”两大官方授权于一身“的移动互联网培训企业。2012年10月18日，刘辉、李静波、崔亚允，中国移动互联网开发行业的三位领军人物，强强联手，倾力打造了蓝鸥。“三巨头”（开发、技术、教学）护航蓝鸥一路向前，经过中国移动互联网开发行业的三位领军人物，强强联手，倾力打造了蓝鸥。
 </p>
 	
-</section>
+</div>
 <!-- 官方相册 -->
-<section class="photo-album clearfix">
+<div class="photo-album clearfix choose">
 <a href="javascript:void(0)"><img src="../../img/course/example.png"></a>
 <a href="javascript:void(0)"><img src="../../img/course/example.png"></a>
 <a href="javascript:void(0)"><img src="../../img/course/example.png"></a>
 <a href="javascript:void(0)"><img src="../../img/course/example.png"></a>
 <a href="javascript:void(0)"><img src="../../img/course/example.png"></a>
 	
-</section>
+</div>
 
 <!-- 用户评价 -->
 
-<section class="course-judge">
+<div class="course-judge choose">
 <div class="judge-count clearfix">
-	<p>5.2</p>
+	<p class="judge-countp1">5.2</p>
 	<div class="clearfix">
 	<span class="judge-star judge-star-active"></span>
 	<span class="judge-star judge-star-active"></span>
@@ -178,7 +177,7 @@
 	<span class="judge-star"></span>
 	<span class="judge-star"></span>
 	</div>
-	<p>该课程共56人评价</p>
+	<p class="judge-countp2">该课程共56人评价</p>
 </div>
 <div class="judge-num">
 <div>
@@ -204,10 +203,10 @@
 </div>	
 </div>
 <div class="impression clearfix">
-	<div>
+	<div class="impression1">
 		<span>大家印象:</span>
 	</div>
-	<div>
+	<div class="impression2">
 		<span>交通便利(323)</span>
 		<span>交通便利(323)</span>
 		<span>交通便利(323)</span>
@@ -221,7 +220,7 @@
 	</div>
 </div>
 <div class="judge-details">
-	<div>评价内容(134)</div>
+	<div class="judge-details1">评价内容(134)</div>
 	<ul>
 		<li>
 			<span class="user-judge user-judge-active"></span>
@@ -244,25 +243,24 @@
 
 		</li>
 	</ul>
-	<nav class="judge-nav">
-		<a href="javascript:void(0)"><span class="pre-page">上一页</span></a>
-		<a href="javascript:void(0)"><span class="page-active">1</span></a>
-		<a href="javascript:void(0)"><span>2</span></a>
-		<a href="javascript:void(0)"><span>3</span></a>
-		<a href="javascript:void(0)"><span>4</span></a>
-		<a href="javascript:void(0)"><span>5</span></a>
-		<a href="javascript:void(0)"><span>6</span></a>
-		<a href="javascript:void(0)"><span>7</span></a>
-		<a href="javascript:void(0)"><span>8</span></a>
-		<a href="javascript:void(0)"><span>9</span></a>
-		<a href="javascript:void(0)"><span>...</span></a>
-		<a href="javascript:void(0)"><span>100</span></a>
-		<a href="javascript:void(0)"><span class="next-page">下一页</span></a>
-	</nav>
+	<div class="judge-nav">
+	<a href="javascript:void(0)"><span class="pre-page">上一页</span></a>
+	<a href="javascript:void(0)"><span class="page-num page-num-active">1</span></a>
+	<a href="javascript:void(0)"><span class="page-num">2</span></a>
+	<a href="javascript:void(0)"><span class="page-num">3</span></a>
+	<a href="javascript:void(0)"><span class="page-num">4</span></a>
+	<a href="javascript:void(0)"><span class="page-num">5</span></a>
+	<a href="javascript:void(0)"><span class="page-num">6</span></a>
+	<a href="javascript:void(0)"><span class="page-num">7</span></a>
+	<a href="javascript:void(0)"><span class="page-num">8</span></a>
+	<a href="javascript:void(0)"><span class="page-num">9</span></a>
+	<a href="javascript:void(0)"><span class="page-num">...</span></a>
+	<a href="javascript:void(0)"><span class="page-num">100</span></a>
+	<a href="javascript:void(0)"><span class="next-page">下一页</span></a>
+	</div>
 </div>
 	
-</section>
-
+</div>
 
 
 
@@ -284,19 +282,19 @@
 
 	</div>
 	<div class="right ">
-	<aside class="hot-sale">
+	<div class="hot-sale">
 	<div class="hot-sale-topic">
-		<span>热销课程</span>	
-		<span>更多</span>		
+		<span class="hot-sale-topic1">热销课程</span>	
+		<span class="hot-sale-topic2">更多</span>		
 	</div>
 	<ul class="hot-course-list">
-		<li class="hot-course">
+        <li class="hot-course">
 		<a href="javascript:void(0)">
 			<img src="../../img/course/example.png">
 			<div class="hot-course-words">
-			<p class="course-name">4个月IOS高薪就业班...</p>
-			<p>北京市海淀区清河中街金...</p>
-			<span>￥</span><span>1288</span>
+			<p class="course-name hot-course-words1">4个月IOS高薪就业班...</p>
+			<p class="hot-course-words2">北京市海淀区清河中街金...</p>
+			<span class="hot-course-words21">￥</span><span class="hot-course-words22">1288</span>
 			</div>
 		</a>
 		</li>
@@ -304,23 +302,23 @@
 		<a href="javascript:void(0)">
 			<img src="../../img/course/example.png">
 			<div class="hot-course-words">
-			<p class="course-name">4个月IOS高薪就业班...</p>
-			<p>北京市海淀区清河中街金...</p>
-			<span>￥</span><span>1288</span>
+			<p class="course-name hot-course-words1">4个月IOS高薪就业班...</p>
+			<p class="hot-course-words2">北京市海淀区清河中街金...</p>
+			<span class="hot-course-words21">￥</span><span class="hot-course-words22">1288</span>
 			</div>
 		</a>
 		</li>
 	</ul>
 
 
-	</aside>
 	</div>
-</section>
+	</div>
+</div>
 
 <!--***********************内容结束**************************-->
-<footer>
-			<div class="limit">
-				<p class="friendlyLink">
+<div id="footer"><!--尾部标签-->
+			<div class="limit"><!--限位居中-->
+				<p class="friendlyLink"><!--跳转链接-->
 					<span>友情链接</span>
 					<a href="javascript:void(0);">蓝鸥科技</a>
 					<a href="javascript:void(0);">蓝鸥科技</a>
@@ -333,9 +331,9 @@
 					<a class="more" href="javascript:void(0);">更多<i class="iconfont">&#xe6ac;</i></a>
 					
 				</p>
-				<div class="comprehensiveInformation">
-					<ul>
-						<li>
+				<div class="comprehensiveInformation"><!--网站信息内容-->
+					<ul class="ul1">
+						<li class="li1">
 							<p>我们的实验室</p>
 						</li>
 						<li>
@@ -351,8 +349,8 @@
 							<a href="javascript:void(0);">课后60分钟考试</a>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul2">
+						<li class="li1">
 							<p>关于我们</p>
 						</li>
 						<li>
@@ -365,8 +363,8 @@
 							<a href="javascript:void(0);">加入我们</a>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul3">
+						<li class="li1">
 							<p>现有课程</p>
 						</li>
 						<li>
@@ -382,8 +380,8 @@
 							<a href="javascript:void(0);">H5</a>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul4">
+						<li class="li1">
 							<p>帮助</p>
 						</li>
 						<li>
@@ -399,8 +397,8 @@
 							<a href="javascript:void(0);">服务条款</a>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul5">
+						<li class="li1">
 							<p>反馈方式</p>
 						</li>
 						<li>
@@ -413,8 +411,8 @@
 							<img src="../../img/head_footer/head_footer_10.png"/>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul6">
+						<li class="li1">
 							<p>精英吧APP扫描下载</p>
 						</li>
 						<li>
@@ -422,17 +420,16 @@
 						</li>
 					</ul>
 				</div>
-				<div class="license">
+				<div class="license"><!--备案内容-->
 					<p>蓝鸥科技有限公司©1997-2016 <span>|</span> 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</p>
 				</div>
 			</div>
-		</footer>
+		</div>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DSADAmtF6TTG3AQQFYoil1hmazQpAh9n"></script>
 <script type="text/javascript" src="../../js/jquery.min.js"></script>
 <script type="text/javascript">
 $(".course-reorder>li").on("click",function(){
 	var index = $(this).index();
-	console.log(index);
 	$(this).addClass("course-reorder-active").siblings().removeClass("course-reorder-active");
 	$(".course-reorder a").css({
 		color:"#333"
@@ -440,8 +437,37 @@ $(".course-reorder>li").on("click",function(){
 	$(".course-reorder a").eq(index).css({
 		color:"#29b572"
 	})
-   $(".course-details-below section").hide();
-   $(".course-details-below section").eq(index).show();
+   // $(".choose").eq(index).show();
+ if(index == 0){
+ 	$(".school-course").show();
+ 	$(".school-instro").hide();		
+	$(".photo-album").hide();	
+	$(".course-judge").hide();
+ }
+  if(index == 1){
+ 	$(".school-course").hide();
+ 	$(".school-instro").show();		
+	$(".photo-album").hide();	
+	$(".course-judge").hide();
+ }
+if(index == 2){
+ 	$(".school-course").hide();
+ 	$(".school-instro").hide();		
+	$(".photo-album").show();	
+	$(".course-judge").hide();
+}
+if(index == 3){
+ 	$(".school-course").hide();
+ 	$(".school-instro").hide();		
+	$(".photo-album").hide();	
+	$(".course-judge").show();
+}
+
+
+
+
+
+
 
 })
 	var map = new BMap.Map("allmap");    // 创建Map实例

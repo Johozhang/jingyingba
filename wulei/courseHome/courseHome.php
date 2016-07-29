@@ -32,7 +32,7 @@
 <!--***********************header结束**************************-->
 
 <!--***********************导航窗开始**************************-->
-<nav class="course-classfy">
+<div class="course-classfy">
 <div class="course-content-classfy">
 <span class="classfy-icon"></span>
 <span class="classfy-word">分类:</span>
@@ -56,19 +56,19 @@
 	<li><a href="javascript:void(0)">东城区</a></li>
 </ul>	
 </div>
-</nav>
+</div>
 <!--***********************导航窗结束**************************-->
 
 <!--***********************内容开始**************************-->
-<section class="course-content">
-<nav>
+<div class="course-content">
+<div>
 	<ul class="course-reorder clearfix">
 		<li class="course-reorder-active"><a href="javascript:void(0)" class="default">默认</a></li>
 		<li><a href="javascript:void(0)" class="sale-volume">销量</a></li>
 		<li><a href="javascript:void(0)" class="sale-price">价格</a></li>
 		<li><a href="javascript:void(0)" class="high-opinion">好评</a></li>
 	</ul>
-</nav>
+</div>
 	<ul class="course-lists clearfix">
 <!-- 		<li class="course-brief">
 		<a href="javascript:void">
@@ -91,7 +91,7 @@
 
 	</ul>
 
-<nav class="page-shift">
+<div class="page-shift">
 	<a href="javascript:void(0)"><span class="pre-page ">上一页</span></a>
 <!-- 	<a href="javascript:void(0)"><span class="page-active">1</span></a>
 	<a href="javascript:void(0)"><span>2</span></a>
@@ -105,8 +105,8 @@
 	<a href="javascript:void(0)"><span>...</span></a>
 	<a href="javascript:void(0)"><span>100</span></a> -->
 	<a href="javascript:void(0)"><span class="next-page ">下一页</span></a>
-</nav>
-</section>	
+</div>
+</div>	
 <!--***********************内容结束**************************-->
 <footer>
 			<div class="limit">
