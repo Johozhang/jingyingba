@@ -714,7 +714,19 @@ tr,td,table{
 }
 
 
+.loginreg {
+	margin: 38px 0px;
+}
 
+.loginreg a {
+	color: #000;
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+.loginreg a:hover {
+	color: #008800;
+}
 
 
 

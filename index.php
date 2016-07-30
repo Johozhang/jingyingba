@@ -1,5 +1,9 @@
 <?php 
 	session_start();
+	$flag = 0;
+	// $user = $_SESSION['user_name'] ;
+    $flag = $_SESSION[('flag')];
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -64,13 +68,13 @@
 						<a class="active" href="javascript:void(0);">首页</a>
 					</li>
 					<li>
-						<a href="wulei/courseHome/courseHome.html">线下课程</a>
+						<a href="wulei/courseHome/courseHome.php">线下课程</a>
 					</li>
 					<li>
 						<a href="javascript:void(0);">在线课程</a>
 					</li>
 					<li>
-						<a href="wulei/schoolHome/schoolHome.html">学校</a>
+						<a href="wulei/schoolHome/schoolHome.php">学校</a>
 					</li>
 					<li>
 						<a href="javascript:void(0);">互联网头条</a>
@@ -80,10 +84,12 @@
 					</li>
 				</ul>
 				<?php 
-					if(isset($_SESSION["user_name"])) {
+					if($flag == 1) {
+						
+
 
 				?>
-                   <a href="javascript:void(0);" class="personalBtn">
+                   <a href="login.html" class="personalBtn">
 					<div class="headPic">
 						<img src="img/head_footer/head_footer_03.png"/>
 					</div>
@@ -120,7 +126,7 @@
 							<img src="img/index/touxiang.png" class="clearfix" />
 							<div class="centerms clearfix">
 								<p>Hi，<span>中午</span>好，<br />欢迎来到精英吧。</p>
-								<a href="javascript:void(0);" id="centerlogin" class="centerlogin centerbtn">登录</a>
+								<a href="login.html" id="centerlogin" class="centerlogin centerbtn">登录</a>
 								<a href="login.html#zhuce" id="centerreg" class="centerbtn">注册</a>
 							</div>
 						</div>
@@ -474,9 +480,35 @@
 			<script type="text/javascript" src="js/jquery.min.js"></script>
 			<script type="text/javascript">
 
+ function passdestory(){
+		$.ajax({
+				type:"GET",                						//ajax传递出去的数据获取的方式
+				url:"php/flag1.php",							//ajax链接路径。
+				data:{
+					code:$.trim($("input[name=phone]").val())	        //ajax传递出去的数据。
+				},
+				dataType:"json",								//ajax得到的数据格式
+				success:function(data) {
+					
+					
+				}
+			})	
+		    }
+
+
+
+
+
+
+
+
+
+
 
 $(".centerlogin ").on("click",function(){
-	<?php unset($_SESSION['user_name']);  ?>
+	passdestory();
+
+
 	window.location.href = "login.html";
 
 })
