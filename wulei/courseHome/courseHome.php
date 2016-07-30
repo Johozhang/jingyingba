@@ -1,3 +1,8 @@
+<?php 
+	session_start();
+	$flag = $_SESSION[('flag')];
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,29 +15,43 @@
 </head>
 <body>
 <!--***********************header开始**************************-->
-<header>
-	<div class="limit">
-		<a class="jyLogo" href="../../index.html"></a>
-		<ul class="navigation">
-			<li><a class="active" href="javascript:void(0);">课程</a></li>
-			<li><a href="javascript:void(0);">学习指导</a></li>
-			<li><a href="javascript:void(0);">企业招聘</a></li>
-			<li><a href="javascript:void(0);">互联网头条</a></li>
-			<li><a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a></li>
-		</ul>
-		<a href="javascript:void(0);" class="personalBtn">
-			<div class="headPic">
-				<img src="../../img/head_footer/head_footer_03.png"/>
+		<div id="header"><!--头部标签-->
+			<div class="limit"><!--限位居中-->
+				<a class="jyLogo" href="../../index.php"></a><!--精英吧logo-->
+				<ul class="navigation"><!--顶部导航条-->
+					<li><a class="active" href="javascript:void(0);">课程</a></li>
+					<li><a href="javascript:void(0);">学习指导</a></li>
+					<li><a href="javascript:void(0);">企业招聘</a></li>
+					<li><a href="javascript:void(0);">互联网头条</a></li>
+					<li><a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a></li>
+				</ul>
+               <?php 
+					if($flag == 1) {
+
+				?>
+                   <a href="javascript:void(0);" class="personalBtn">
+					<div class="headPic">
+						<img src="../../img/head_footer/head_footer_03.png"/>
+					</div>
+					<span>个人中心</span>
+					<i class="iconfont down">&#xe818;</i>
+				    </a>
+				<?php 
+					}else {
+				 ?>
+				
+
+				<div style="float: right;" class="loginreg clearfix">
+					<a href="../../login.html">登录</a>丨
+					<a href="../../login.html#zhuce">注册</a>
+				</div>
+				<?php } ?>
 			</div>
-			<span>个人中心</span>
-			<i class="iconfont down">&#xe818;</i>
-		</a>
-	</div>
-</header>
+		</div>
 <!--***********************header结束**************************-->
 
 <!--***********************导航窗开始**************************-->
-<nav class="course-classfy">
+<div class="course-classfy">
 <div class="course-content-classfy">
 <span class="classfy-icon"></span>
 <span class="classfy-word">分类:</span>
@@ -56,19 +75,19 @@
 	<li><a href="javascript:void(0)">东城区</a></li>
 </ul>	
 </div>
-</nav>
+</div>
 <!--***********************导航窗结束**************************-->
 
 <!--***********************内容开始**************************-->
-<section class="course-content">
-<nav>
+<div class="course-content">
+<div>
 	<ul class="course-reorder clearfix">
 		<li class="course-reorder-active"><a href="javascript:void(0)" class="default">默认</a></li>
 		<li><a href="javascript:void(0)" class="sale-volume">销量</a></li>
 		<li><a href="javascript:void(0)" class="sale-price">价格</a></li>
 		<li><a href="javascript:void(0)" class="high-opinion">好评</a></li>
 	</ul>
-</nav>
+</div>
 	<ul class="course-lists clearfix">
 <!-- 		<li class="course-brief">
 		<a href="javascript:void">
@@ -91,7 +110,7 @@
 
 	</ul>
 
-<nav class="page-shift">
+<div class="page-shift">
 	<a href="javascript:void(0)"><span class="pre-page ">上一页</span></a>
 <!-- 	<a href="javascript:void(0)"><span class="page-active">1</span></a>
 	<a href="javascript:void(0)"><span>2</span></a>
@@ -105,12 +124,12 @@
 	<a href="javascript:void(0)"><span>...</span></a>
 	<a href="javascript:void(0)"><span>100</span></a> -->
 	<a href="javascript:void(0)"><span class="next-page ">下一页</span></a>
-</nav>
-</section>	
+</div>
+</div>	
 <!--***********************内容结束**************************-->
-<footer>
-			<div class="limit">
-				<p class="friendlyLink">
+<div id="footer"><!--尾部标签-->
+			<div class="limit"><!--限位居中-->
+				<p class="friendlyLink"><!--跳转链接-->
 					<span>友情链接</span>
 					<a href="javascript:void(0);">蓝鸥科技</a>
 					<a href="javascript:void(0);">蓝鸥科技</a>
@@ -123,9 +142,9 @@
 					<a class="more" href="javascript:void(0);">更多<i class="iconfont">&#xe6ac;</i></a>
 					
 				</p>
-				<div class="comprehensiveInformation">
-					<ul>
-						<li>
+				<div class="comprehensiveInformation"><!--网站信息内容-->
+					<ul class="ul1">
+						<li class="li1">
 							<p>我们的实验室</p>
 						</li>
 						<li>
@@ -141,8 +160,8 @@
 							<a href="javascript:void(0);">课后60分钟考试</a>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul2">
+						<li class="li1">
 							<p>关于我们</p>
 						</li>
 						<li>
@@ -155,8 +174,8 @@
 							<a href="javascript:void(0);">加入我们</a>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul3">
+						<li class="li1">
 							<p>现有课程</p>
 						</li>
 						<li>
@@ -172,8 +191,8 @@
 							<a href="javascript:void(0);">H5</a>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul4">
+						<li class="li1">
 							<p>帮助</p>
 						</li>
 						<li>
@@ -189,8 +208,8 @@
 							<a href="javascript:void(0);">服务条款</a>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul5">
+						<li class="li1">
 							<p>反馈方式</p>
 						</li>
 						<li>
@@ -203,8 +222,8 @@
 							<img src="../../img/head_footer/head_footer_10.png"/>
 						</li>
 					</ul>
-					<ul>
-						<li>
+					<ul class="ul6">
+						<li class="li1">
 							<p>精英吧APP扫描下载</p>
 						</li>
 						<li>
@@ -212,11 +231,11 @@
 						</li>
 					</ul>
 				</div>
-				<div class="license">
+				<div class="license"><!--备案内容-->
 					<p>蓝鸥科技有限公司©1997-2016 <span>|</span> 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</p>
 				</div>
 			</div>
-		</footer>
+		</div>
 <script type="text/javascript" src="../../js/jquery.min.js"></script>
 <script type="text/javascript">
 $(function() {
