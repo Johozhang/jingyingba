@@ -1,3 +1,11 @@
+<?php 
+	session_start();
+	$flag = $_SESSION[('flag')];
+
+ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,13 +28,28 @@
 					<li><a href="javascript:void(0);">互联网头条</a></li>
 					<li><a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a></li>
 				</ul>
-				<a href="javascript:void(0);" class="personalBtn"><!--个人中心-->
-					<div class="headPic"><!--头像-->
+				<?php 
+					if($flag == 1) {
+						
+
+				?>
+                   <a href="javascript:void(0);" class="personalBtn">
+					<div class="headPic">
 						<img src="../../img/head_footer/head_footer_03.png"/>
 					</div>
 					<span>个人中心</span>
 					<i class="iconfont down">&#xe818;</i>
-				</a>
+				    </a>
+				<?php 
+					}else {
+				 ?>
+				
+
+				<div style="float: right;" class="loginreg clearfix">
+					<a href="../../login.html">登录</a>丨
+					<a href="../../login.html#zhuce">注册</a>
+				</div>
+				<?php } ?>
 			</div>
 		</div>
 <!--***********************header结束**************************-->

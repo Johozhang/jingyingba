@@ -14,7 +14,7 @@
 	<body>
 		<header>
 			<div class="limit">
-				<a class="jyLogo" href="index.php"></a>
+				<a class="jyLogo" href="index.html"></a>
 				<ul class="navigation">
 					<li>
 						<a href="javascript:void(0);">iOS</a>
@@ -246,6 +246,8 @@
 
 
 
+
+
 			//模拟提交
 			var loginsub = document.getElementById("loginsub");
 			var loginBtn = document.getElementById("loginBtn");
@@ -254,9 +256,7 @@
 			pwdcheck();
 	    	codecheck();
 			if(flag_name&&flag_pwd&&flag_code){
-				 passCheck();
- 			  window.location.href = "index.php"
-
+ 			  window.location.href = "index.html"
  			}
  			//----当点击提交键时判断输入框是否为空
  			$(this).parent().parent().find("input").each(function(index,key) {
@@ -296,52 +296,6 @@
 		    $("input[name=code]").on("blur", function() {   //当验证码输入框失焦的时候触发。生成异步请求。
 		    	codecheck();
 		    })
-
-
-
- function passCheck(){
-		$.ajax({
-				type:"GET",                						//ajax传递出去的数据获取的方式
-				url:"php/flag.php",							//ajax链接路径。
-				data:{
-					code:$.trim($("input[name=phone]").val())	        //ajax传递出去的数据。
-				},
-				dataType:"json",								//ajax得到的数据格式
-				success:function(data) {
-					
-					
-				}
-			})	
-		    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		    function codecheck(){
 		    				    $.ajax({
 				type:"GET",                						//ajax传递出去的数据获取的方式
@@ -351,22 +305,18 @@
 				},
 				dataType:"json",								//ajax得到的数据格式
 				success:function(data) {
-					
+					console.log(data);
 					if(data.msg == "pass") {
 						$("input[name=code]").siblings(".phonetips").hide().siblings(".tips-ok").show();
-						
 						flag_code = true;
-					
 					}
 					else if(!$("input[name=code]").val().trim()){
 						$("input[name=code]").siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
 						flag_code = false;
-				
 					}
 					else {
 						$("input[name=code]").siblings(".phonetips").hide().siblings(".tips-nouser").show();
 						flag_code = false;
-				
 					}
 				}
 			})	
@@ -382,7 +332,7 @@
 				},
 				dataType:"json",
 				success:function(data) {
-					
+					console.log(data);
 					if(data.msg == "number") {
 						$("input[name=password]").siblings(".phonetips").hide().siblings(".tips-ok").show();
 						flag_pwd = true;
@@ -407,21 +357,18 @@
 				},
 				dataType:"json",
 				success:function(data) {
-					
+					console.log(data);
 					if(data.msg == "success") {
 						$("input[name=phone]").siblings(".phonetips").hide().siblings(".tips-ok").show();
 						flag_name = true;
-					
 					}else if(!$("input[name=phone]").val().trim()) {
 						$("input[name=phone]").siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
 						flag_name = false;
-					
 
 					}
 					else{
 						$("input[name=phone]").siblings(".phonetips").hide().siblings(".tips-nouser").show();
 						flag_name = false;
-					
 					}
 				}
 			})

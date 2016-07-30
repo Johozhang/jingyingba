@@ -1,3 +1,17 @@
+<?php 	
+	include_once("../../php/conn1.php");
+	$value = $_GET["value"];
+	$sql = "select * from classDetail limit $value,1";
+	//limit startIndex,length;
+	$result = mysql_query($sql);
+	$row = mysql_fetch_assoc($result);
+?>
+<?php 
+	session_start();
+	$flag = $_SESSION[('flag')];
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +26,7 @@
 <!--***********************header开始**************************-->
 		<div id="header"><!--头部标签-->
 			<div class="limit"><!--限位居中-->
-				<a class="jyLogo" href="../../index.html"></a><!--精英吧logo-->
+				<a class="jyLogo" href="../../index.php"></a><!--精英吧logo-->
 				<ul class="navigation"><!--顶部导航条-->
 					<li><a class="active" href="javascript:void(0);">课程</a></li>
 					<li><a href="javascript:void(0);">学习指导</a></li>
@@ -20,13 +34,28 @@
 					<li><a href="javascript:void(0);">互联网头条</a></li>
 					<li><a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a></li>
 				</ul>
-				<a href="javascript:void(0);" class="personalBtn"><!--个人中心-->
-					<div class="headPic"><!--头像-->
+				<?php 
+					if($flag == 1) {
+						
+
+				?>
+                   <a href="javascript:void(0);" class="personalBtn">
+					<div class="headPic">
 						<img src="../../img/head_footer/head_footer_03.png"/>
 					</div>
 					<span>个人中心</span>
 					<i class="iconfont down">&#xe818;</i>
-				</a>
+				    </a>
+				<?php 
+					}else {
+				 ?>
+				
+
+				<div style="float: right;" class="loginreg clearfix">
+					<a href="../../login.html">登录</a>丨
+					<a href="../../login.html#zhuce">注册</a>
+				</div>
+				<?php } ?>
 			</div>
 		</div>
 <!--***********************header结束**************************-->
@@ -45,51 +74,52 @@
 </div>
 <div class="course-advertise">
 	<div class="ad-img">
-	<img src="../../img/course/example.png" class="ad-big">
-	<a href="javascript:void(0)"><img src="../../img/course/example.png" class="ad-small"></a>
-	<a href="javascript:void(0)"><img src="../../img/course/example.png" class="ad-small"></a>
-	<a href="javascript:void(0)"><img src="../../img/course/example.png" class="ad-small"></a>
-	<a href="javascript:void(0)"><img src="../../img/course/example.png" class="ad-small ad-small-last"></a>
+	<img src="<?php echo $row["imgAddress"];?>" class="ad-big">
+	<a href="javascript:void(0)"><img src="<?php echo $row["imgAddress"];?>" class="ad-small"></a>
+	<a href="javascript:void(0)"><img src="<?php echo $row["imgAddress"];?>" class="ad-small"></a>
+	<a href="javascript:void(0)"><img src="<?php echo $row["imgAddress"];?>" class="ad-small"></a>
+	<a href="javascript:void(0)"><img src="<?php echo $row["imgAddress"];?>" class="ad-small ad-small-last"></a>
 	</div>
 	<div class="ad-detail">
-	<p class="course-topic">一年会员-购买专用连接仅用于购买用-中艺摄影网校</p>
+	<p class="course-topic"><?php echo $row["classType"];?></p>
 	<span class="course-company">蓝鸥教育科技有限公司</span><span class="course-company1">[公司详情]</span>
-	<p class="course-adress">北京市海淀区清河中街金五星大厦五楼</p>
+	<p class="course-adress"><?php echo $row["shoolAddress"];?></p>
 	<table class="course-wrap">
 	<tr class="course-price">
 		<td colspan="3">
 			<span class="current-price1">￥</span>
-			<span class="current-price">1288</span>
-			<span class="origin-price">￥</span>
-		    <del class="origin-price1">1500</del>
-		   
-		    <span class="front-money1">￥99.9</span>
-		     <span class="front-money">报名定金</span>
-		</td>
-	</tr>
-	<tr class="sale-num">
-		<td class="sale-num1">
-		<span class="course-saleout">已售</span>
-		<span class="course-saleout1">342</span>
-		</td>
-		<td class="sale-num2">
-		<span class="course-judge-01">评分</span>
-		<span class="course-judge-02">8.9</span>
-		</td>
-		<td class="sale-num3">
-		<span class="course-judgement1">评价</span>
-		<span class="course-judgement2">1200</span>
-		<span class="course-judgement3">人</span>
-		</td>
-	</tr>
+			<span class="current-price"><?php echo $row["classPrice"];?></span>
+	<span class="origin-price">￥</span>
+			    <del class="origin-price1">1500</del>
+			   
+			    <span class="front-money1">￥99.9</span>
+			     <span class="front-money">报名定金</span>
+			</td>
+		</tr>
+		<tr class="sale-num">
+			<td class="sale-num1">
+			<span class="course-saleout">已售</span>
+			<span class="course-saleout1">342</span>
+			</td>
+			<td class="sale-num2">
+			<span class="course-judge-01">评分</span>
+			<span class="course-judge-02">8.9</span>
+			</td>
+			<td class="sale-num3">
+			<span class="course-judgement1">评价</span>
+			<span class="course-judgement2">1200</span>
+			<span class="course-judgement3">人</span>
+			</td>
+		</tr>
 
-	</table>
-	<a href="javascript:void(0)" class="pre-advice">预约咨询</a>
-	<a href="javascript:void(0)" class="buy-soon">立即抢购</a>
-	
+		</table>
+		<a href="javascript:void(0)" class="pre-advice">预约咨询</a>
+		<a href="javascript:void(0)" class="buy-soon">立即抢购</a>
 		
+			
+		</div>
 	</div>
-</div>
+
 
 <!--***********************广告结束**************************-->
 
@@ -151,40 +181,42 @@
 		<table class="course-details">
 		<tr class="table-up">
 			<td class="table-up1">课程类型 :</td>
-			<td class="table-up2">4个月IOS高薪就业班</td>
+			<td class="table-up2"><?php echo $row["type"];?></td>
 		</tr>
 		<tr class="table-up">
 			<td class="table-up1">上课人数 :</td>
-			<td class="table-up2">55人</td>
+			<td class="table-up2"><?php echo $row["classNum"];?></td>
 		</tr>
 		<tr class="table-up">
 			<td class="table-up1">课程周期 :</td>
-			<td class="table-up2">12个月</td>
+			<td class="table-up2"><?php echo $row["classCycle"];?></td>
 		</tr>
 		<tr class="table-up">
 			<td class="table-up1">课程价格 :</td>
-			<td class="table-up2">1280元</td>
+			<td class="table-up2"><?php echo $row["classPrice"];?></td>
 		</tr>
 		<tr class="table-up">
 			<td class="table-up1">学校地址 :</td>
-			<td class="table-up2 table-up3">北京市海淀区清河中街金五星商厦</td>
+			<td class="table-up2 table-up3"><?php echo $row["shoolAddress"];?></td>
 		</tr>
 		<tr class="table-down table-down1">
 			<td class="table-up1">适合人群 :</td>
-			<td class="table-up2">新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村，下麦田，农家，他来到“当年农家”院落。</td>
+			<td class="table-up2">
+			<?php echo $row["suitable"];?>
+			</td>
 		</tr>
 		<tr class="table-down">
 
 			<td class="table-up1">教学内容 :</td>
-			<td class="table-up2">新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村，下麦田，农家，他来到“当年农家”院落。</td>
+			<td class="table-up2"><?php echo $row["classDescribe"];?></td>
 		</tr>
 		<tr class="table-down">
 			<td class="table-up1">学习目标 :</td>
-			<td class="table-up2">新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村，下麦田，农家，他来到“当年农家”院落。</td>
+			<td class="table-up2"><?php echo $row["learningGoals"];?></td>
 		</tr>
 		<tr class="table-down">
 			<td class="table-up1">使用教材 :</td>
-			<td class="table-up2">新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村，下麦田，农家，他来到“当年农家”院落。</td>
+			<td class="table-up2"><?php echo $row["coursebook"];?></td>
 		</tr>
 			
 		</table>

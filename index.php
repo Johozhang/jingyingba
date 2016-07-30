@@ -1,3 +1,10 @@
+<?php 
+	session_start();
+	$flag = 0;
+	// $user = $_SESSION['user_name'] ;
+    $flag = $_SESSION[('flag')];
+
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -54,7 +61,7 @@
 							<img src="img/index/beijing.png" alt="" />
 							<em>北京</em>
 						</li>
-					</ul>
+				</ul>
 				</div>
 				<ul class="navigation">
 					<li>
@@ -67,7 +74,7 @@
 						<a href="javascript:void(0);">在线课程</a>
 					</li>
 					<li>
-						<a href="wulei/schoolHome/schoolHome.html">学校</a>
+						<a href="wulei/schoolHome/schoolHome.php">学校</a>
 					</li>
 					<li>
 						<a href="javascript:void(0);">互联网头条</a>
@@ -77,19 +84,22 @@
 					</li>
 				</ul>
 				<?php 
-					if(isset($_SESSION["user_name"])) {
+					if($flag == 1) {
+						
+
 
 				?>
-				<a href="javascript:void(0);" class="personalBtn">
+                   <a href="login.html" class="personalBtn">
 					<div class="headPic">
-						<img src="img/head_footer/head_footer_03.png" />
+						<img src="img/head_footer/head_footer_03.png"/>
 					</div>
 					<span>个人中心</span>
 					<i class="iconfont down">&#xe818;</i>
-				</a>
+				    </a>
 				<?php 
 					}else {
 				 ?>
+				
 
 				<div style="float: right;" class="loginreg clearfix">
 					<a href="login.html">登录</a>丨
@@ -160,7 +170,7 @@
 					</div>
 				</div>
 			</div>
-			<!--------------------分割线-------------------->
+				<!--------------------分割线-------------------->
 			<ul id="kecheng" class="clearfix">
 				<li>
 					<div class="kechengtu kechengtu1 clearfix"></div>
@@ -198,7 +208,7 @@
 					</div>
 				</li>
 			</ul>
-			<!--------------------分割线-------------------->
+				<!--------------------分割线-------------------->
 			<div id="contain">
 				<!--online-->
 				<h2>精英吧在线课程</h2>
@@ -236,44 +246,44 @@
 				</div>
 				<!--underline-->
 				<h2>线下课程</h2>
-				<a href="javascript:void(0);"><img src="img/index/underline.png" /></a>
+				<a href="javascript:void(0);"><img src="img/index/underline.png"/></a>
 				<!--jingyingjoin-->
 				<h2>精英吧入驻学校</h2>
-				<a href="wulei/schoolHome/schoolHome.html"><img src="img/index/join.png" alt="" /></a>
+				<a href="wulei/schoolHome/schoolHome.html"><img src="img/index/join.png" alt="" /></a> 
 				<!--differentsudent-->
 				<h2>不一样的学习方式：你学习的不仅仅是技能</h2>
 				<div id="studdiff" class="clearfix">
 					<ul id="different" class="clearfix">
 						<li>
-							<img src="img/index/stud1.png" alt="" class="stud" />
+							<img src="img/index/stud1.png" alt=""  class="stud"/>
 							<h3>同学一起学</h3>
 							<p>精准的算法，让你在学习的道路上不孤单，和志同道合，能力相当的同学为伴一起在学习的路上打怪升级，刷副本。</p>
 						</li>
 						<li>
-							<img src="img/index/stud2.png" alt="" class="stud" />
+							<img src="img/index/stud2.png" alt=""  class="stud"/>
 							<h3>学习顾问指引</h3>
 							<p>贴心的学习顾问，当你遇到困难，学习动力不足，对学习方向和未来迷茫，出手相助。</p>
 						</li>
 						<li>
-							<img src="img/index/stud3.png" alt="" class="stud" />
+							<img src="img/index/stud3.png" alt=""  class="stud"/>
 							<h3>奖学制度</h3>
 							<p>每个时代都需要天才，但是也需要勤奋刻苦的人才，对，就是你，你学的好，我们就要奖励你，我们要助推你成为社会的精英。</p>
 						</li>
 						<li>
-							<img src="img/index/stud4.png" alt="" class="stud" />
+							<img src="img/index/stud4.png" alt=""  class="stud"/>
 							<h3>有问必答</h3>
 							<p>遇到困难不要怕，上千名认证专家在线支持答疑，只要你提问，我们就回答。</p>
 						</li>
 					</ul>
 				</div>
-
+				
 				<!--scholarship-->
 				<h2>目前我们共有超过<span style="color: #ea9b65;">30000</span>注册学习用户<span style="color: #666;font-size: 2.2rem;margin-left: 22px;">目前已经有259名学生获得奖学金</span></h2>
 				<div id="scholarship" class="clearfix">
 					<ul id="personList" class="clearfix">
 						<li class="person">
 							<div class="personhead">
-								<img src="img/index/personhead.png" />
+								<img src="img/index/personhead.png"/>
 							</div>
 							<p class="peresonname">王大锤</p>
 							<p class="peresonfen">Android基础课<br />综合分数91分</p>
@@ -282,7 +292,7 @@
 						</li>
 						<li class="person">
 							<div class="personhead">
-								<img src="img/index/personhead2.png" />
+								<img src="img/index/personhead2.png"/>
 							</div>
 							<p class="peresonname">孙悟空</p>
 							<p class="peresonfen">Android基础课<br />综合分数91分</p>
@@ -291,7 +301,7 @@
 						</li>
 						<li class="person">
 							<div class="personhead">
-								<img src="img/index/personhead3.png" />
+								<img src="img/index/personhead3.png"/>
 							</div>
 							<p class="peresonname">陈长生</p>
 							<p class="peresonfen">Android基础课<br />综合分数91分</p>
@@ -300,7 +310,7 @@
 						</li>
 						<li class="person">
 							<div class="personhead">
-								<img src="img/index/personhead4.png" />
+								<img src="img/index/personhead4.png"/>
 							</div>
 							<p class="peresonname">刘欢</p>
 							<p class="peresonfen">Android基础课<br />综合分数91分</p>
@@ -309,7 +319,7 @@
 						</li>
 						<li class="person">
 							<div class="personhead">
-								<img src="img/index/personhead5.png" />
+								<img src="img/index/personhead5.png"/>
 							</div>
 							<p class="peresonname">孙子</p>
 							<p class="peresonfen">Android基础课<br />综合分数91分</p>
@@ -318,73 +328,33 @@
 						</li>
 					</ul>
 				</div>
-
+				
 				<!--agency-->
 				<h2>合作机构</h2>
 				<div id="agency" class="clearfix">
 					<a href="javascript:void(0);" id="agencyleft">&lt;</a>
 					<div id="agencyxian">
 						<ul id="agencyList" class="clearfix">
-							<li>
-								<a href="https://www.baidu.com/"><img src="img/index/baidu.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.cctv.com/"><img src="img/index/cctv.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.sina.com.cn/"><img src="img/index/sina.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.10010.com/"><img src="img/index/liantong.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://gz.sofang.com/"><img src="img/index/soufang.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.pingan.com/"><img src="img/index/pingan.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://bank.ecitic.com/"><img src="img/index/zhongxin.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.cyzone.cn/"><img src="img/index/chuangyebang.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.le.com/"><img src="img/index/leshi.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.tiexue.net/"><img src="img/index/tiexue.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="https://www.baidu.com/"><img src="img/index/baidu.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.cctv.com/"><img src="img/index/cctv.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.sina.com.cn/"><img src="img/index/sina.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.10010.com/"><img src="img/index/liantong.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://gz.sofang.com/"><img src="img/index/soufang.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.pingan.com/"><img src="img/index/pingan.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://bank.ecitic.com/"><img src="img/index/zhongxin.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.cyzone.cn/"><img src="img/index/chuangyebang.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.le.com/"><img src="img/index/leshi.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="http://www.tiexue.net/"><img src="img/index/tiexue.png" alt="" /></a>
-							</li>
+							<li><a href="https://www.baidu.com/"><img src="img/index/baidu.png" alt="" /></a></li>
+							<li><a href="http://www.cctv.com/"><img src="img/index/cctv.png" alt="" /></a></li>
+							<li><a href="http://www.sina.com.cn/"><img src="img/index/sina.png" alt="" /></a></li>
+							<li><a href="http://www.10010.com/"><img src="img/index/liantong.png" alt="" /></a></li>
+							<li><a href="http://gz.sofang.com/"><img src="img/index/soufang.png" alt="" /></a></li>
+							<li><a href="http://www.pingan.com/"><img src="img/index/pingan.png" alt="" /></a></li>
+							<li><a href="http://bank.ecitic.com/"><img src="img/index/zhongxin.png" alt="" /></a></li>
+							<li><a href="http://www.cyzone.cn/"><img src="img/index/chuangyebang.png" alt="" /></a></li>
+							<li><a href="http://www.le.com/"><img src="img/index/leshi.png" alt="" /></a></li>
+							<li><a href="http://www.tiexue.net/"><img src="img/index/tiexue.png" alt="" /></a></li>	
+							<li><a href="https://www.baidu.com/"><img src="img/index/baidu.png" alt="" /></a></li>
+							<li><a href="http://www.cctv.com/"><img src="img/index/cctv.png" alt="" /></a></li>
+							<li><a href="http://www.sina.com.cn/"><img src="img/index/sina.png" alt="" /></a></li>
+							<li><a href="http://www.10010.com/"><img src="img/index/liantong.png" alt="" /></a></li>
+							<li><a href="http://gz.sofang.com/"><img src="img/index/soufang.png" alt="" /></a></li>
+							<li><a href="http://www.pingan.com/"><img src="img/index/pingan.png" alt="" /></a></li>
+							<li><a href="http://bank.ecitic.com/"><img src="img/index/zhongxin.png" alt="" /></a></li>
+							<li><a href="http://www.cyzone.cn/"><img src="img/index/chuangyebang.png" alt="" /></a></li>
+							<li><a href="http://www.le.com/"><img src="img/index/leshi.png" alt="" /></a></li>
+							<li><a href="http://www.tiexue.net/"><img src="img/index/tiexue.png" alt="" /></a></li>
 						</ul>
 					</div>
 					<a href="javascript:void(0);" id="agencyright">&gt;</a>
@@ -500,94 +470,117 @@
 				<div class="license">
 					<p>蓝鸥科技有限公司©1997-2016 <span>|</span> 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</p>
 				</div>
-
+				
 			</div>
 		</div>
 		<a id="top" href="javascript:void(0)">
-			<img src="img/index/city.png" />
+			<img src="img/index/city.png"/>
 		</a>
-		<div id="loginsuccess">
-			<div id="successbox">
-				<div class="succhead clearfix">
-					<p>提示</p>
-					<a href="javascript:void(0);" id="sucx"></a>
-				</div>
-				<p>欢迎使用精英家产品，精英产品包括精英家、精英吧和口袋精英。
-					<br />您目前只有精英吧的使用权限。
-					<br />请以后用此账户直接登录精英吧。</p>
-				<a href="javascript:void(0);" id="sucding">确定</a>
-			</div>
-		</div>
-		<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript">
-			//			登录弹窗
-			$("#loginsuccess").on("click", function() {
-				$("#loginsuccess").hide()
-			})
+			<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript">
 
-			//			返回顶部
-			$("#top").click(function() {
+ function passdestory(){
+		$.ajax({
+				type:"GET",                						//ajax传递出去的数据获取的方式
+				url:"php/flag1.php",							//ajax链接路径。
+				data:{
+					code:$.trim($("input[name=phone]").val())	        //ajax传递出去的数据。
+				},
+				dataType:"json",								//ajax得到的数据格式
+				success:function(data) {
+					
+					
+				}
+			})	
+		    }
+
+
+
+
+
+
+
+
+
+
+
+$(".centerlogin ").on("click",function(){
+	passdestory();
+
+
+	window.location.href = "login.html";
+
+})
+
+
+
+
+
+
+
+
+
+
+
+//			返回顶部
+			$("#top").click(function(){
 				$("html,body").animate({
-					scrollTop: 0
-				}, 400, "swing")
+					scrollTop:0
+				},400,"swing")
 			})
+			
+//			城市切换
+			$(".city p").click(function(){$(".city i,.city-cont").fadeToggle()});
+			$(".city-cont").mouseleave(function(){$(".city i,.city-cont").hide()});
+			
+//			banner轮播图
+				new Swiper(".swiper-container", {
+					autoplay: 2000,
+					speed: 2000, //控制速度，滑动时间
+					loop: true, // 循环
+					pagination: ".pagination", //分页器
+					paginationClickable: true, //小圆点是否可点
+				});
 
-			//			城市切换
-			$(".city p").click(function() {
-				$(".city i,.city-cont").fadeToggle()
-			});
-			$(".city-cont").mouseleave(function() {
-				$(".city i,.city-cont").hide()
-			});
 
-			//			banner轮播图
-			new Swiper(".swiper-container", {
-				autoplay: 2000,
-				speed: 2000, //控制速度，滑动时间
-				loop: true, // 循环
-				pagination: ".pagination", //分页器
-				paginationClickable: true, //小圆点是否可点
-			});
+	$(function() {
+	var index = 0;//当前图片的下标
+	var perWidth = $("#agencyList li").eq(0).outerWidth(true);//每张图片的宽度
+	function tab() {
+		$("#agencyList").stop().animate({
+			left:-index * perWidth
+		},function() {
+			if(index > $("#agencyList li").length/2-1) {
+					$("#agencyList").css("left",0);
+					index = 0;
+			}
+		})
+	}
+	function next() {
+		index++;
+		tab();
+	}
+	function prev() {
+		index--;
+//		console.log(index)
+		if(index < 0) {
+			index = $("#agencyList li").length/2-1;
+			$("#agencyList").css("left",-(index+1) * perWidth);
+		}
+		
+		tab();
+	}
+	//上一张
+	$("#agencyleft").on("click",prev)
+	
+	//下一张
+	$("#agencyright").on("click",next)
 
-			$(function() {
-				var index = 0; //当前图片的下标
-				var perWidth = $("#agencyList li").eq(0).outerWidth(true); //每张图片的宽度
-				function tab() {
-					$("#agencyList").stop().animate({
-						left: -index * perWidth
-					}, function() {
-						if(index > $("#agencyList li").length / 2 - 1) {
-							$("#agencyList").css("left", 0);
-							index = 0;
-						}
-					})
-				}
-
-				function next() {
-					index++;
-					tab();
-				}
-
-				function prev() {
-					index--;
-					//		console.log(index)
-					if(index < 0) {
-						index = $("#agencyList li").length / 2 - 1;
-						$("#agencyList").css("left", -(index + 1) * perWidth);
-					}
-
-					tab();
-				}
-				//上一张
-				$("#agencyleft").on("click", prev)
-
-				//下一张
-				$("#agencyright").on("click", next)
-
-			})
-		</script>
-
+})
+	
+			</script>
+			
 	</body>
 
 </html>
