@@ -61,7 +61,7 @@
 	text-align: center;
 	font-size: 1.6rem;
 	color: black;
-	line-height: 1;
+	line-height: 38px;
 }
 .deleteOrder {
 	display: block;
@@ -138,19 +138,19 @@
 	line-height: 40px;
 	font-size: 1.4rem;
 }
-.opHead>span:nth-child(2) {
+.opHead>.span2 {
 	width: 251px;
 }
-.opHead>span:nth-child(3) {
+.opHead>.span3 {
 	width: 111px;
 }
-.opHead>span:nth-child(4) {
+.opHead>.span4 {
 	width: 98px;
 }
-.opHead>span:nth-child(5) {
+.opHead>.span5 {
 	width: 86px;
 }
-.opHead>span:nth-child(6) {
+.opHead>.span6 {
 	width: 123px;
 }
 .orderList {
@@ -238,13 +238,10 @@
 	font-size: 1.4rem;
 	padding: 28px 0 24px;
 	background-color: #fafafa;
+	display: none;
 }
 .refundCondition {
 	margin-bottom: 15px;
-	overflow: hidden;
-}
-.refundCondition * {
-	float: left;
 }
 .refundLine {
 	display: inline-block;
@@ -267,6 +264,7 @@
 	height: 28px;
 	border: 1px solid #e8e8e8;
 	background-color: white;
+	cursor: pointer;
 }
 .refundOptionBar input {
 	border: 0;
@@ -302,9 +300,17 @@
 	line-height: 28px;
 	border: 1px solid #E8E8E8;
 	border-top: 0;
+	z-index: 900;
 	display: none;
 }
+.refundOptionBar>span {
+	float: left;
+	line-height: 28px;
+	text-indent: 10px;
+}
 .refundOption li {
+	width: 100%;
+	display: block;
 	border-top: 1px solid #e8e8e8;
 }
 .refundOption li:nth-child(1) {
@@ -330,6 +336,7 @@
 	margin-top: 20px;
 }
 .starBar {
+	display: inline-block;
 	height: 30px;
 }
 .starBar i {
@@ -346,12 +353,14 @@
 	height: 61px;
 	border: 1px solid #e8e8e8;
 	padding: 10px;
+	display: inline-block;
 }
 .experience span {
 	display: inline-block;
 	line-height: 22px;
 	margin: 0 10px 10px 0;
 	padding: 0 5px;
+	cursor: pointer;
 }
 .solid {
 	background-color: #29b572;

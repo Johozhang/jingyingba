@@ -1,0 +1,257 @@
+.mt30 {
+	margin-top: 30px;
+	height: 430px;
+}
+.cdd4 {
+	height: 571px;
+}
+.cdd5 {
+	height: 378px;
+}
+.cdd6 {
+	height: 430px;
+	margin-top: 30px;
+}
+.cdDown {
+	position: relative;
+	float: right;
+	width: 1064px;
+	background-color: white;
+}
+.classMate {
+	width: 400px;
+	margin: 97.5px auto;
+	font-size: 1.4rem;
+}
+.classMate h2 {
+	font-size: 2.2rem;
+	line-height: 1;
+	margin-bottom: 66px;
+}
+.classMate span {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+	line-height: 38px;
+}
+.classMate>div {
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.classMate>a {
+	display: block;
+	width: 134px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #29b572;
+	color: white;
+	margin: auto;
+}
+.inputWrap {
+	width: 306px;
+	height: 36px;
+	border: 1px solid #e8e8e8;
+	float: right;
+	display: inline-block;
+}
+.inputWrap input {
+	border: 0;
+	width: 286px;
+	height: 14px;
+	line-height: 14px;
+	padding: 11px 10px;
+}
+.course {
+	width: 997px;
+	margin: auto;
+}
+.title {
+	font-size: 1.4rem;
+	line-height: 1;
+	margin-top: 30px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.courseList li {
+	position: relative;
+	line-height: 39px;
+	height: 39px;
+	text-indent: 15px;
+}
+.courseList li span {
+	display: inline-block;
+	text-indent: 0;
+	font-size: 1.4rem;
+}
+.courseList li .titleList {
+	width: 756px;
+}
+.courseList li .heart {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+}
+.courseList .active {
+	background-color: #eef9f4;
+}
+.classMate1 {
+	width: 590px;
+	margin: 127px auto 0;
+	font-size: 1.4rem;
+	overflow: hidden;
+}
+.classMate1>p {
+	font-size: 1.4rem;
+	line-height: 1;
+	margin-bottom: 18px;
+	text-indent: 109px;
+}
+.classMate1 span {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	line-height: 38px;
+}
+.classMate1>div {
+	overflow: hidden;
+}
+.classMate1>div>div {
+	width: 427px;
+	margin-bottom: 12px;
+	float: left;
+}
+.classMate1>div>div:nth-child(2) {
+	float: right;
+	width: 153px;
+	text-align: left;
+	line-height: 38px;
+}
+.classMate1>div:nth-child(3) .erroTips {
+	display: none;
+}
+.erroTips {
+	display: none;
+}
+.redDot {
+	color: red;
+}
+.greenDot {
+	color: green;
+	display: none;
+}
+.tips {
+	display: inline-block;
+	text-indent: 10px;
+	color: #999;
+	font-size: 1.2rem;
+}
+.classMate1>a {
+	display: block;
+	width: 134px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #29b572;
+	color: white;
+	margin-left: 109px;
+	float: left;
+}
+.inputWrap1 {
+	width: 306px;
+	height: 36px;
+	border: 1px solid #e8e8e8;
+	float: right;
+	display: inline-block;
+	margin-left: 19px;
+}
+.inputWrap1 input {
+	border: 0;
+	width: 286px;
+	height: 14px;
+	line-height: 14px;
+	padding: 11px 10px;
+}
+.cdtitle {
+	line-height: 51px;
+	color: #999;
+	font-size: 1.4rem;
+	border-bottom: 1px solid #f2f2f2;
+	text-indent: 20px;
+}
+.couponWrap {
+	width: 883px;
+	margin: 60px auto 0;
+	overflow: hidden;
+	text-align: center;
+}
+.couponWrap>div {
+	float: left;
+}
+.couponWrap>.mr {
+	margin-right: 15px;
+}
+.coupon {
+	width: 434px;
+	height: 196px;
+	background-color: #29b572;
+}
+.coupon>p {
+	color: white;
+	font-size: 1.2rem;
+	line-height: 32px;
+}
+.disCount {
+	width: 432px;
+	height: 163px;
+	margin: 1px auto 0;
+	background-color: white;
+}
+.disCount>.p1 {
+	font-size: 1.8rem;
+	color: #29b572;
+}
+.disCount>.p2 {
+	font-size: 1.2rem;
+	color: #29b572;
+}
+.count {
+	font-size: 64px;
+}
+.invalid {
+	background-color: #c7c7c7;
+}
+.invalid .disCount p {
+	color: #c7c7c7;
+}
+.toDown {
+	width: 100%;
+	border-bottom: 1px solid #e8e8e8;
+	background-color: #fafafa;
+	height: 54px;
+}
+.toDown a {
+	width: 118px;
+	text-align: center;
+	color: black;
+	font-size: 1.6rem;
+	display: inline-block;
+	line-height: 54px;
+	border-right: 1px solid transparent;
+}
+.toDown .active {
+	background-color: white;
+	border-right-color: #e8e8e8;
+	border-bottom: 1px solid white;
+}
+.cdDown>.p2 {
+	position: absolute;
+	top: 50%;
+	margin-top: -24px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6rem;
+}
+.cdDown>.p2 a {
+	color: #29b572;
+}
