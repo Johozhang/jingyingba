@@ -12,7 +12,7 @@
 	</head>
 
 	<body>
-		<header>
+		<div id="header">
 			<div class="limit">
 				<a class="jyLogo" href="index.html"></a>
 				<ul class="navigation">
@@ -23,7 +23,7 @@
 						<a href="javascript:void(0);">Android</a>
 					</li>
 					<li>
-						<a class="active" href="javascript:void(0);">Unity3D</a>
+						<a class="active" href="index/u3d.html">Unity3D</a>
 					</li>
 					<li>
 						<a href="javascript:void(0);">H5</a>
@@ -33,9 +33,8 @@
 					</li>
 				</ul>
 			</div>
-		</header>
+		</div>
 		<!--------------------header结束-------------------->
-
 		<div id="bg">
 			<div id="loginbox">
 				<!--登录页-->
@@ -46,28 +45,28 @@
 					</div>
 					<form action="" method="post" class="loginmain login clearfix" id="loginmain">
 						<ul id="loginList" class="clearfix">
-						<!-- 手机号 -->
+							<!-- 手机号 -->
 							<li class="loginList1 loginList0">
 								<span></span>
 								<input maxlength="11" type="text" name="phone" id="loginphone" value="" placeholder="请输入手机号" />
-								<div class="phonetips  tips-empty">  手机号不能为空</div>
-								<div class="phonetips  tips-ok">  手机号正确</div>
+								<div class="phonetips  tips-empty"> 手机号不能为空</div>
+								<div class="phonetips  tips-ok"> 手机号正确</div>
 								<div class="phonetips tips-nouser">！请输入正确的手机号码</div>
 							</li>
-						<!-- 密码 -->
+							<!-- 密码 -->
 							<li class="loginList2 loginList0">
 								<input maxlength="20" type="password" name="password" id="password" value="" placeholder="请输入密码" />
-								<div class="phonetips phonetips1 tips-empty">  密码不能为空</div>
-								<div class="phonetips phonetips1 tips-ok">  密码正确</div>
-								<div class="phonetips phonetips1 tips-nouser">  密码错误</div>
+								<div class="phonetips phonetips1 tips-empty"> 密码不能为空</div>
+								<div class="phonetips phonetips1 tips-ok"> 密码正确</div>
+								<div class="phonetips phonetips1 tips-nouser"> 密码错误</div>
 							</li>
-						<!-- 验证码 -->
+							<!-- 验证码 -->
 							<li id="logincode" style="width: 170px;float: left;" class="clearfix loginList3 loginList0">
 								<!--maxlength:限制input输入字数-->
 								<input type="text" name="code" id="code" value="" placeholder="验证码" maxlength="4" />
-								<div class="phonetips phonetips1 tips-empty">  验证码不能为空</div>
-								<div class="phonetips phonetips1 tips-ok">  验证码正确</div>
-								<div class="phonetips phonetips1 tips-nouser">  验证码错误</div>
+								<div class="phonetips phonetips2 tips-empty"> 验证码不能为空</div>
+								<div class="phonetips phonetips2 tips-ok"> 验证码正确</div>
+								<div class="phonetips phonetips2 tips-nouser"> 验证码错误</div>
 							</li>
 							<img src="php/code.php" alt="" id="codeimg" class="clearfix" />
 						</ul>
@@ -93,26 +92,26 @@
 					<!--注册页开始-->
 					<form action="php/register.php" method="post" class="loginmain register clearfix" id="register">
 						<ul id="regList" class="clearfix">
-						    <!-- 手机号-->
-							<li>
+							<!-- 手机号-->
+							<li class="loginList4 loginList0">
 								<input maxlength="11" type="text" name="phone1" id="regphone" value="" placeholder="请输入手机号" />
-								<div class ="phonetips phonetips1">！请输入正确的手机号码</div>
+								<div class="phonetips phonetips1">！请输入正确的手机号码</div>
 								<!-- <div class ="phonetips phonetips1">！该号码已存在</div> -->
 							</li>
-							 <!-- 验证码-->
-							<li id="regcode" style="width: 170px;float: left;" class="clearfix">
+							<!-- 验证码-->
+							<li id="regcode" style="width: 170px;float: left;" class="loginList5 loginList0 clearfix">
 								<input type="text" name="code1" id="code" value="" placeholder="验证码" maxlength="4" />
 							</li>
 							<a href="javascript:void(0)" id="getyanzhengma" class="clearfix">获取验证码</a>
-							 <!-- 输入密码 -->
-							<li id="regPassword">
+							<!-- 输入密码 -->
+							<li id="regPassword" class="loginList6 loginList0">
 								<input maxlength="20" type="password" name="password1" class="password1" id="password" value="" placeholder="请输入密码" />
 							</li>
-							 <!-- 再次输入密码 -->
-							<li id="logincode" class="clearfix">
+							<!-- 再次输入密码 -->
+							<li id="logincode" class="clearfix loginList7 loginList0">
 								<!--maxlength:限制input输入字数-->
 								<input type="password" name="repassword" id="repassword" class="repassword" value="" placeholder="请重新输入密码" maxlength="20" />
-								<div class ="phonetips phonetips1">！请和输入密码一致</div>
+								<div class="phonetips phonetips1">！请和输入密码一致</div>
 							</li>
 						</ul>
 						<div class="clearfix">
@@ -120,7 +119,7 @@
 						</div>
 						<div id="sub">
 							<a id="loginBtn" class="loginBtn" href="javascript:void(0)">提交</a>
-							<input type="submit" name="" id="loginsub"  class="loginsub1" value="提交" />
+							<input type="submit" name="" id="loginsub" class="loginsub1" value="提交" />
 						</div>
 					</form>
 				</div>
@@ -130,15 +129,25 @@
 			<p id="loginfooter">蓝鸥科技有限公司©1997-2016 <span></span>北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</p>
 		</div>
 		<div id="nophone">
-			<div id="nophonebox">
-				
+			<div id="successbox">
+				<div class="succhead clearfix">
+					<p>提示</p>
+					<a href="javascript:void(0);" id="sucx"></a>
+				</div>
+				<p>很抱歉，该手机号不存在！</p>
+				<br /><br />
+				<a href="javascript:void(0);" id="sucding">确定</a>
 			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery.min.js">
 		</script>
 		<script type="text/javascript">
+			//			登录弹窗
+			$("#nophone").on("click", function() {
+				$("#nophone").hide()
+			})
 
-//		location模拟点击,获取传过来的id,substring(1)表示从字符串第2位开始获取
+			//		location模拟点击,获取传过来的id,substring(1)表示从字符串第2位开始获取
 			//登陆位
 			var flag_name = false;
 			var flag_pwd = false;
@@ -146,12 +155,12 @@
 			var flag_register = false;
 			var flag_register1 = false;
 			if(location.hash.substring(1) == "zhuce") {
-					$(".loginhead a").eq(1).addClass("logincho").siblings().removeClass("logincho");
-					$("form").hide();
-					$("form").eq(1).show();
+				$(".loginhead a").eq(1).addClass("logincho").siblings().removeClass("logincho");
+				$("form").hide();
+				$("form").eq(1).show();
 			}
-			
-//			登录注册页面tab切换
+
+			//			登录注册页面tab切换
 			$(".loginhead a").on("click", function() {
 				$(this).addClass("logincho").siblings().removeClass("logincho");
 				var index = $(this).index();
@@ -166,56 +175,43 @@
 			var telnum;
 			var flag = true;
 			//检查两次输入的密码是否一致
-            function pwdCheck(){
-            	if($(".repassword").val() != $(".password1").val()){
+			function pwdCheck() {
+				if($(".repassword").val() != $(".password1").val()) {
 					$(".repassword").parent().find("div").show();
 					flag_register1 = false;
-				}
-				else{
+				} else {
 					$(".repassword").parent().find("div").hide();
 					flag_register1 = true;
 				}
 
-            }
-            //检查手机号是否满足正则
-            function userNameCheck(){
-				 telnum = $("#regphone").val();
-				if(telReg.test(telnum)){
-				  $("#regphone").parent().find("div").hide();	
-				  flag_register = true;
+			}
+			//检查手机号是否满足正则
+			function userNameCheck() {
+				telnum = $("#regphone").val();
+				if(telReg.test(telnum)) {
+					$("#regphone").parent().find("div").hide();
+					flag_register = true;
 
-				}
-				else{
-				  $("#regphone").parent().find("div").show();	
-				  flag_register = false;
+				} else {
+					$("#regphone").parent().find("div").show();
+					flag_register = false;
 				}
 			}
 
-
-            //取消表单默认事件
+			//取消表单默认事件
 			// document.onsubmit = function(e){
 			// 	var e = e || window.event;
 			// 	return false;
 			// }
 
-			$("#regphone").on("input",function(){
+			$("#regphone").on("input", function() {
 				userNameCheck();
 
 			})
 
-
-
-			$(".repassword").on("blur",function(){
+			$(".repassword").on("blur", function() {
 				pwdCheck();
 			})
-
-
-
-
-
-
-
-
 
 			//验证码刷新
 			var code = document.getElementById("codeimg");
@@ -225,172 +221,146 @@
 				codecheck();
 			}
 
-
-
-
-
-
-
-			$(".loginBtn").eq(1).on("click",function(){
+			$(".loginBtn").eq(1).on("click", function() {
 				userNameCheck()
 				pwdCheck();
-				if(flag_register&&flag_register1){
+				if(flag_register && flag_register1) {
 					// window.location.href = "php/register.php"
 					$(".loginsub1").click();
 
 				}
 			})
 
-
-
-
-
-
-
-
 			//模拟提交
 			var loginsub = document.getElementById("loginsub");
 			var loginBtn = document.getElementById("loginBtn");
-			$(".loginBtn").eq(0).on("click",function(){
-	    	namecheck()
-			pwdcheck();
-	    	codecheck();
-			if(flag_name&&flag_pwd&&flag_code){
- 			  window.location.href = "index.html"
- 			}
- 			//----当点击提交键时判断输入框是否为空
- 			$(this).parent().parent().find("input").each(function(index,key) {
-
-			if(!$(key).val().trim()) {
-				 //内容为空的时候，提示信息显示
-					$(key).next().show();
-		   		 // return;
-			}else {
-				//内容不为空，提示信息隐藏
-					$(key).next().hide();
-				}
-			})	
-
-			})
-			//----当输入框输入时判断输入框是否为空
-		    $("input").on("input", function() {
-			if(!$(this).val().trim()) {
-
-				//内容为空的时候，提示信息显示
-				$(this).siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
-			}else {
-				//内容不为空，提示信息隐藏
-				$(this).siblings(".tips-empty").hide();
-			}
-		    })   
-			//---发起一个检测用户名是否存在的请求        
-		    $("input[name=phone]").on("blur", function() {
-		    	namecheck()
-				pwdcheck();
-		    })
-		    //---发起一个检测密码是否正确的请求   
-		    $("input[name=password]").on("blur", function() {   
+			$(".loginBtn").eq(0).on("click", function() {
+					namecheck()
 					pwdcheck();
-		    })
-		    //---发起一个检测验证码是否正确的请求   
-		    $("input[name=code]").on("blur", function() {   //当验证码输入框失焦的时候触发。生成异步请求。
-		    	codecheck();
-		    })
-		    function codecheck(){
-		    				    $.ajax({
-				type:"GET",                						//ajax传递出去的数据获取的方式
-				url:"php/checkCode.php",							//ajax链接路径。
-				data:{
-					code:$("input[name=code]").val().trim(),	        //ajax传递出去的数据。
-				},
-				dataType:"json",								//ajax得到的数据格式
-				success:function(data) {
-					console.log(data);
-					if(data.msg == "pass") {
-						$("input[name=code]").siblings(".phonetips").hide().siblings(".tips-ok").show();
-						flag_code = true;
+					codecheck();
+					if(flag_name && flag_pwd && flag_code) {
+						window.location.href = "index.html"
 					}
-					else if(!$("input[name=code]").val().trim()){
-						$("input[name=code]").siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
-						flag_code = false;
-					}
-					else {
-						$("input[name=code]").siblings(".phonetips").hide().siblings(".tips-nouser").show();
-						flag_code = false;
-					}
-				}
-			})	
-		    }
-		    function pwdcheck(){
-		    				$.ajax({
-				type:"POST",
-				url:"php/passwordIfError.php",
-				data:{
-					username:$.trim($("input[name=phone]").val()),//ajax传递出去的数据
-					password:$.trim($("input[name=password]").val())//ajax传递出去的数据
-					
-				},
-				dataType:"json",
-				success:function(data) {
-					console.log(data);
-					if(data.msg == "number") {
-						$("input[name=password]").siblings(".phonetips").hide().siblings(".tips-ok").show();
-						flag_pwd = true;
-					}
-					else if(!$("input[name=password]").val().trim()){
-						$("input[name=password]").siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
-						flag_pwd = false;
-					}
-					else {
-						$("input[name=password]").siblings(".phonetips").hide().siblings(".tips-nouser").show();
-						flag_pwd = false;
-					}
-				 }
-			  })
-		    }
-		    function namecheck(){
-		    				$.ajax({
-				type:"POST",
-				url:"php/usernameIfError.php",
-				data:{
-					username:$.trim($("input[name=phone]").val())
-				},
-				dataType:"json",
-				success:function(data) {
-					console.log(data);
-					if(data.msg == "success") {
-						$("input[name=phone]").siblings(".phonetips").hide().siblings(".tips-ok").show();
-						flag_name = true;
-					}else if(!$("input[name=phone]").val().trim()) {
-						$("input[name=phone]").siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
-						flag_name = false;
+					//----当点击提交键时判断输入框是否为空
+					$(this).parent().parent().find("input").each(function(index, key) {
 
+						if(!$(key).val().trim()) {
+							//内容为空的时候，提示信息显示
+							$(key).next().show();
+							// return;
+						} else {
+							//内容不为空，提示信息隐藏
+							$(key).next().hide();
+						}
+					})
+
+				})
+				//----当输入框输入时判断输入框是否为空
+			$("input").on("input", function() {
+					if(!$(this).val().trim()) {
+
+						//内容为空的时候，提示信息显示
+						$(this).siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
+					} else {
+						//内容不为空，提示信息隐藏
+						$(this).siblings(".tips-empty").hide();
 					}
-					else{
-						$("input[name=phone]").siblings(".phonetips").hide().siblings(".tips-nouser").show();
-						flag_name = false;
-					}
-				}
+				})
+				//---发起一个检测用户名是否存在的请求        
+			$("input[name=phone]").on("blur", function() {
+					namecheck()
+					pwdcheck();
+				})
+				//---发起一个检测密码是否正确的请求   
+			$("input[name=password]").on("blur", function() {
+					pwdcheck();
+				})
+				//---发起一个检测验证码是否正确的请求   
+			$("input[name=code]").on("blur", function() { //当验证码输入框失焦的时候触发。生成异步请求。
+				codecheck();
 			})
 
-		    }
+			function codecheck() {
+				$.ajax({
+					type: "GET", //ajax传递出去的数据获取的方式
+					url: "php/checkCode.php", //ajax链接路径。
+					data: {
+						code: $("input[name=code]").val().trim(), //ajax传递出去的数据。
+					},
+					dataType: "json", //ajax得到的数据格式
+					success: function(data) {
+						console.log(data);
+						if(data.msg == "pass") {
+							$("input[name=code]").siblings(".phonetips").hide().siblings(".tips-ok").show();
+							flag_code = true;
+						} else if(!$("input[name=code]").val().trim()) {
+							$("input[name=code]").siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
+							flag_code = false;
+						} else {
+							$("input[name=code]").siblings(".phonetips").hide().siblings(".tips-nouser").show();
+							flag_code = false;
+						}
+					}
+				})
+			}
 
+			function pwdcheck() {
+				$.ajax({
+					type: "POST",
+					url: "php/passwordIfError.php",
+					data: {
+						username: $.trim($("input[name=phone]").val()), //ajax传递出去的数据
+						password: $.trim($("input[name=password]").val()) //ajax传递出去的数据
 
+					},
+					dataType: "json",
+					success: function(data) {
+						console.log(data);
+						if(data.msg == "number") {
+							$("input[name=password]").siblings(".phonetips").hide().siblings(".tips-ok").show();
+							flag_pwd = true;
+						} else if(!$("input[name=password]").val().trim()) {
+							$("input[name=password]").siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
+							flag_pwd = false;
+						} else {
+							$("input[name=password]").siblings(".phonetips").hide().siblings(".tips-nouser").show();
+							flag_pwd = false;
+						}
+					}
+				})
+			}
 
+			function namecheck() {
+				$.ajax({
+					type: "POST",
+					url: "php/usernameIfError.php",
+					data: {
+						username: $.trim($("input[name=phone]").val())
+					},
+					dataType: "json",
+					success: function(data) {
+						console.log(data);
+						if(data.msg == "success") {
+							$("input[name=phone]").siblings(".phonetips").hide().siblings(".tips-ok").show();
+							flag_name = true;
+						} else if(!$("input[name=phone]").val().trim()) {
+							$("input[name=phone]").siblings(".tips-ok").hide().siblings(".tips-nouser").hide().siblings(".tips-empty").show();
+							flag_name = false;
 
+						} else {
+							$("input[name=phone]").siblings(".phonetips").hide().siblings(".tips-nouser").show();
+							flag_name = false;
+							$("#nophone").show();
+						}
+					}
+				})
 
-
-
-
-
-
-
-
-
+			}
 
 			//			get验证码
 			var gety = document.getElementById("getyanzhengma");
 			var timer = 0;
+
 			function timeRemaid() {
 				var timeAll = 58;
 				clearInterval(timer);
@@ -407,13 +377,13 @@
 					}
 				}, 100)
 			}
-//			给click设置布尔值
+			//			给click设置布尔值
 			var clickFlag = true;
 			gety.onclick = function() {
-				
+
 				if(clickFlag) {
 					timeRemaid();
-				
+
 					gety.innerHTML = "59秒";
 					gety.style.backgroundColor = "#b5b5b5";
 					gety.style.color = "#fff";
@@ -421,8 +391,6 @@
 				}
 				clickFlag = false;
 			}
-			
-
 		</script>
 	</body>
 

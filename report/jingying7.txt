@@ -1,6 +1,5 @@
 丁笙:
 	计划：
-		header，footer，ie8兼容
 		个人中心的后台
 	完成的页面:
 		header，footer，ie8兼容
@@ -9,8 +8,8 @@
 		
 张俊豪：
 	计划：
-		修改ie8兼容性;
-		u3d的后台
+		修改ie8兼容性；
+		u3d的后台；
 	完成页面：
 		修改ie8兼容性;
 	遇到问题：
@@ -24,7 +23,7 @@
 	遇到问题：
 		<php>
 			if(is_set($_SESSION["username"])) {
-				gerenzhong
+				
 			}else {
 				
 			}

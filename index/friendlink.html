@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>友情链接</title>
-		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/head_footer.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/index/index.css"/>
-	</head><<<<deiwei
-	<body>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/head_footer.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index/index.css" />
+	</head>
+	<<<<deiwei <body>
 		<header>
 			<div class="limit">
 				<a class="jyLogo" href="../index.html"></a>
 				<ul class="navigation">
-					<li><a class="active" href="javascript:void(0);">课程</a></li>
-					<li><a href="javascript:void(0);">学习指导</a></li>
-					<li><a href="javascript:void(0);">企业招聘</a></li>
-					<li><a href="javascript:void(0);">互联网头条</a></li>
-					<li><a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a></li>
+					<li>
+						<a class="active" href="javascript:void(0);">课程</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">学习指导</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">企业招聘</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">互联网头条</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><i class="iconfont cross">&#xe665;</i>提问</a>
+					</li>
 				</ul>
+				<?php 
+					if(isset($_SESSION["user_name"])) {
+
+				?>
 				<a href="javascript:void(0);" class="personalBtn">
 					<div class="headPic">
-						<img src="../img/head_footer/head_footer_03.png"/>
+						<img src="../img/head_footer/head_footer_03.png" />
 					</div>
 					<span>个人中心</span>
 					<i class="iconfont down">&#xe818;</i>
 				</a>
+				<?php 
+					}else {
+				 ?>
+				<div style="float: right;" class="loginreg clearfix">
+					<a href="login.html">登录</a>丨
+					<a href="login.html#zhuce">注册</a>
+				</div>
+				<?php } ?>
 			</div>
 		</header>
 		<!--------------------分割线-------------------->
@@ -33,30 +56,60 @@
 			<div id="contain">
 				<h2>合作伙伴</h2>
 				<ul id="partner">
-							<li><a href="https://www.baidu.com/"><img src="../img/index/baidu.png" alt="" /></a></li>
-							<li><a href="http://www.cctv.com/"><img src="../img/index/cctv.png" alt="" /></a></li>
-							<li><a href="http://www.sina.com.cn/"><img src="../img/index/sina.png" alt="" /></a></li>
-							<li><a href="http://www.10010.com/"><img src="../img/index/liantong.png" alt="" /></a></li>
-							<li><a href="http://gz.sofang.com/"><img src="../img/index/soufang.png" alt="" /></a></li>
-							<li><a href="http://www.pingan.com/"><img src="../img/index/pingan.png" alt="" /></a></li>
-							<li><a href="http://bank.ecitic.com/"><img src="../img/index/zhongxin.png" alt="" /></a></li>
-							<li><a href="http://www.cyzone.cn/"><img src="../img/index/chuangyebang.png" alt="" /></a></li>
-							<li><a href="http://www.le.com/"><img src="../img/index/leshi.png" alt="" /></a></li>
-							<li><a href="http://www.tiexue.net/"><img src="../img/index/tiexue.png" alt="" /></a></li>	
+					<li>
+						<a href="https://www.baidu.com/"><img src="../img/index/baidu.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://www.cctv.com/"><img src="../img/index/cctv.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://www.sina.com.cn/"><img src="../img/index/sina.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://www.10010.com/"><img src="../img/index/liantong.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://gz.sofang.com/"><img src="../img/index/soufang.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://www.pingan.com/"><img src="../img/index/pingan.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://bank.ecitic.com/"><img src="../img/index/zhongxin.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://www.cyzone.cn/"><img src="../img/index/chuangyebang.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://www.le.com/"><img src="../img/index/leshi.png" alt="" /></a>
+					</li>
+					<li>
+						<a href="http://www.tiexue.net/"><img src="../img/index/tiexue.png" alt="" /></a>
+					</li>
 				</ul>
-			
-			<h2>友情链接</h2>
-			<div id="friend">
-				<ul id="friendList">
-				<li><a href="http://www.lanou3g.com/">蓝鸥科技</a></li>
-				<li><a href="http://www.immomo.com/">陌陌科技</a></li>
-				<li><a href="">触控科技</a></li>
-				<li><a href="">互动百科</a></li>
-				<li><a href="">搜房网</a></li>
-				</ul>
-			</div>
-			
-			<br />
+
+				<h2>友情链接</h2>
+				<div id="friend">
+					<ul id="friendList">
+						<li>
+							<a href="http://www.lanou3g.com/">蓝鸥科技</a>
+						</li>
+						<li>
+							<a href="http://www.immomo.com/">陌陌科技</a>
+						</li>
+						<li>
+							<a href="">触控科技</a>
+						</li>
+						<li>
+							<a href="">互动百科</a>
+						</li>
+						<li>
+							<a href="">搜房网</a>
+						</li>
+					</ul>
+				</div>
+
+				<br />
 			</div>
 		</div>
 		<footer>
@@ -72,7 +125,7 @@
 					<a href="javascript:void(0);">蓝鸥科技</a>
 					<a href="javascript:void(0);">蓝鸥科技</a>
 					<a class="more" href="javascript:void(0);">更多<i class="iconfont">&#xe6ac;</i></a>
-					
+
 				</p>
 				<div class="comprehensiveInformation">
 					<ul>
@@ -151,7 +204,7 @@
 							<a href="javascript:void(0);">微信反馈：精英吧微信公众号</a>
 						</li>
 						<li>
-							<img src="../img/head_footer/head_footer_10.png"/>
+							<img src="../img/head_footer/head_footer_10.png" />
 						</li>
 					</ul>
 					<ul>
@@ -159,7 +212,7 @@
 							<p>精英吧APP扫描下载</p>
 						</li>
 						<li>
-							<img src="../img/head_footer/head_footer_07.png"/>
+							<img src="../img/head_footer/head_footer_07.png" />
 						</li>
 					</ul>
 				</div>
@@ -168,5 +221,6 @@
 				</div>
 			</div>
 		</footer>
-	</body>
+		</body>
+
 </html>
