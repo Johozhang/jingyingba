@@ -88,19 +88,24 @@
 						
 
 
-				?>
-                   <a href="login.html" class="personalBtn">
+				?><a href="javascript:void(0);"style="color: #333">
+                   <div class="personalBtn">
 					<div class="headPic">
 						<img src="img/head_footer/head_footer_03.png"/>
 					</div>
 					<span>个人中心</span>
 					<i class="iconfont down">&#xe818;</i>
-				    </a>
+					<ul id="perList">
+						<li><a href="">账号设置</a></li>
+						<li><a href="">我是在校生</a></li>
+						<li><a href="">我的订单</a></li>
+						<li><a href="javascript:void(0);" id="tuichu">退出</a></li>
+					</ul>
+				    </div>
+				   </a>
 				<?php 
 					}else {
 				 ?>
-				
-
 				<div style="float: right;" class="loginreg clearfix">
 					<a href="login.html">登录</a>丨
 					<a href="login.html#zhuce">注册</a>
@@ -495,22 +500,9 @@
 			})	
 		    }
 
-
-
-
-
-
-
-
-
-
-
-$(".centerlogin ").on("click",function(){
+$("#tuichu").on("click",function(){
 	passdestory();
-
-
-	window.location.href = "login.html";
-
+	window.location.href = "index.html";
 })
 
 
