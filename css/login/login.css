@@ -2,7 +2,7 @@
 	background-image: url(../../img/index/loginbg.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-origin: content-box;
+	/*background-origin: content-box;*/
 	min-width: 1250px;
 	height: 600px;
 	margin: 0 auto;
