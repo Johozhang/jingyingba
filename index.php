@@ -88,7 +88,7 @@
 						
 
 
-				?><a href="javascript:void(0);"style="color: #333">
+				?><a href="personalcenter/personalcenter.html"style="color: #333">
                    <div class="personalBtn">
 					<div class="headPic">
 						<img src="img/head_footer/head_footer_03.png"/>
